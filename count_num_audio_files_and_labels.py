@@ -1,9 +1,9 @@
-from typing import Tuple
-import soundfile as sf
-
 import argparse
 import csv
 import datetime
+from typing import Tuple
+
+import soundfile as sf
 
 from utils import list_files
 
