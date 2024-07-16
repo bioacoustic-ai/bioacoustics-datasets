@@ -1,7 +1,10 @@
 import json
+import urllib.parse
+
 import mlcroissant as mlc
 import requests
-import urllib.parse
+
+from utils import CroissantFieldsMetadata
 
 
 def _get_metadata_from_url(url: str) -> dict:
@@ -34,7 +37,7 @@ def retrieve_figshare_content(
     # croissant_metadata.name = html2text.html2text(dataset_info["title"])
     croissant_metadata.cite_as = dataset_info["citation"]
     croissant_metadata.creators = [
-        mlc.Person(name=dataset_info["authors"][i]["full_name"])
+        dataset_info["authors"][i]["full_name"]
         for i in range(len(dataset_info["authors"]))
     ]
     croissant_metadata.url = dataset_info.get("figshare_url", url)
@@ -49,8 +52,8 @@ def retrieve_figshare_content(
 
 def retrieve_zenodo_content(
     url: str,
-    croissant_metadata: mlc.Metadata,
-) -> mlc.Metadata:
+    metadata: CroissantFieldsMetadata,
+) -> CroissantFieldsMetadata:
     base_url = "https://zenodo.org"
     item_id = url.split("/")[-1]
     item_url_path = "/records/" + str(item_id)
@@ -58,62 +61,63 @@ def retrieve_zenodo_content(
     dataset_info = _get_metadata_from_url(url_api)
     dataset_metadata = dataset_info["metadata"]
     # croissant_metadata.name = html2text.html2text(dataset_metadata["title"])
-    croissant_metadata.creators = [
-        mlc.Person(name=dataset_metadata["creators"][i]["name"])
+    metadata.creators = [
+        dataset_metadata["creators"][i]["name"]
         for i in range(len(dataset_metadata["creators"]))
     ]
-    croissant_metadata.url = base_url + item_url_path
-    croissant_metadata.date_published = dataset_info[
+    metadata.url = base_url + item_url_path
+    metadata.date_published = dataset_info[
         "created"
     ]  # because each record is linked to one version in zenodo
-    croissant_metadata.description = dataset_metadata.get("description", None)
-    croissant_metadata.license = dataset_metadata["license"][
+    metadata.description = dataset_metadata.get("description", None)
+    metadata.license = dataset_metadata["license"][
         "id"
     ]  # TODO: put url instead as recommended by croissant
-    croissant_metadata.version = (
+    metadata.version = (
         dataset_metadata["relations"]["version"][0]["index"] + 1
     )  # versions are indexed starting from 0
-    return croissant_metadata
+    return metadata
 
 
-def retrieve_dryad_content(url: str, croissant_metadata: mlc.Metadata) -> mlc.Metadata:
+def retrieve_dryad_content(
+    url: str, metadata: CroissantFieldsMetadata
+) -> CroissantFieldsMetadata:
     base_api_url = "https://datadryad.org/api/v2/datasets/"
     doi = url[url.rfind("doi:") :]
     encoded_doi = urllib.parse.quote(doi, safe="")
     dataset_info = _get_metadata_from_url(base_api_url + encoded_doi)
     authors = dataset_info["authors"]
-    croissant_metadata.creators = [
-        mlc.Person(name=authors[i]["firstName"] + authors[i]["lastName"])
-        for i in range(len(authors))
+    metadata.creators = [
+        authors[i]["firstName"] + authors[i]["lastName"] for i in range(len(authors))
     ]
-    croissant_metadata.date_published = dataset_info["publicationDate"]
-    croissant_metadata.description = dataset_info["abstract"]
-    croissant_metadata.version = dataset_info["versionNumber"]
-    croissant_metadata.url = dataset_info["sharingLink"]
-    croissant_metadata.license = dataset_info["license"]
-    return croissant_metadata
+    metadata.date_published = dataset_info["publicationDate"]
+    metadata.description = dataset_info["abstract"]
+    metadata.version = dataset_info["versionNumber"]
+    metadata.url = dataset_info["sharingLink"]
+    metadata.license = dataset_info["license"]
+    return metadata
 
 
 # no version number for osf content
-def retrieve_osf_content(url: str, croissant_metadata: mlc.Metadata) -> mlc.Metadata:
+def retrieve_osf_content(
+    url: str, metadata: CroissantFieldsMetadata
+) -> CroissantFieldsMetadata:
     base_api_url = "https://api.osf.io/v2/nodes/"
     item_id = url.split("/")[3]
     dataset_info = _get_metadata_from_url(base_api_url + item_id)["data"]
-    croissant_metadata.description = dataset_info["attributes"]["description"]
-    croissant_metadata.date_published = dataset_info["attributes"]["date_created"]
+    metadata.description = dataset_info["attributes"]["description"]
+    metadata.date_published = dataset_info["attributes"]["date_created"]
     license_data = dataset_info["relationships"].get("license")
     if license_data:
         license_info = _get_metadata_from_url(license_data["links"]["related"]["href"])
-        croissant_metadata.license = license_info["data"]["attributes"]["url"]
+        metadata.license = license_info["data"]["attributes"]["url"]
     authors_info = _get_metadata_from_url(
         dataset_info["relationships"]["contributors"]["links"]["related"]["href"]
     )["data"]
 
-    croissant_metadata.creators = [
-        mlc.Person(
-            name=authors_info[i]["embeds"]["users"]["data"]["attributes"]["full_name"]
-        )
+    metadata.creators = [
+        authors_info[i]["embeds"]["users"]["data"]["attributes"]["full_name"]
         for i in range(len(authors_info))
     ]
-    croissant_metadata.url = dataset_info["links"]["html"]
-    return croissant_metadata
+    metadata.url = dataset_info["links"]["html"]
+    return metadata
