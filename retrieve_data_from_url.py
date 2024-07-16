@@ -1,6 +1,7 @@
 import json
 import urllib.parse
 
+import html2text
 import mlcroissant as mlc
 import requests
 
@@ -34,7 +35,6 @@ def retrieve_figshare_content(
 
     url = base_api_url + data_type + str(item_id)
     dataset_info = _get_metadata_from_url(url)
-    # croissant_metadata.name = html2text.html2text(dataset_info["title"])
     croissant_metadata.cite_as = dataset_info["citation"]
     croissant_metadata.creators = [
         dataset_info["authors"][i]["full_name"]
@@ -60,7 +60,6 @@ def retrieve_zenodo_content(
     url_api = base_url + "/api/" + item_url_path
     dataset_info = _get_metadata_from_url(url_api)
     dataset_metadata = dataset_info["metadata"]
-    # croissant_metadata.name = html2text.html2text(dataset_metadata["title"])
     metadata.creators = [
         dataset_metadata["creators"][i]["name"]
         for i in range(len(dataset_metadata["creators"]))

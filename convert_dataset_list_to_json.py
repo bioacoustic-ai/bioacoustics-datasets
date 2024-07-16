@@ -5,6 +5,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Dict, List
 
+import html2text
 import mlcroissant as mlc
 import openpyxl
 import pandas as pd
@@ -102,7 +103,10 @@ def create_datasets_metadata_from_table(
         else:
             datasets_not_available_with_api[metadata.name] = metadata.url
 
-        metadata_file_path = os.path.join(output_folder, f"{metadata.name}.json")
+        metadata.description = (
+            html2text.html2text(metadata.description) if metadata.description else None
+        )
+        metadata_output_file_path = os.path.join(output_folder, f"{metadata.name}.json")
 
         if use_croissant_format:
             croissant_metadata = mlc.Metadata(
@@ -128,14 +132,18 @@ def create_datasets_metadata_from_table(
                 else None
             )  # the croissant package automatically converts the published date to datetime.datetime, which is not json serialisable
             write_croissant_metadata(
-                croissant_metadata=croissant_metadata, file_path=metadata_file_path
+                croissant_metadata=croissant_metadata,
+                file_path=metadata_output_file_path,
             )
-            metadata = load_json(metadata_file_path)
+            metadata = load_json(metadata_output_file_path)
         else:
             metadata = vars(metadata)
 
+        # more readable in the final JSON
+        dataset = dict((k.lower(), v) for k, v in dataset.items())
+
         metadata.update(dataset)
-        write_json(data=metadata, path=metadata_file_path)
+        write_json(data=metadata, path=metadata_output_file_path)
 
     write_json(
         path=os.path.join(OUTPUT_FOLDER, "datasets_without_croissant_fields.json"),
