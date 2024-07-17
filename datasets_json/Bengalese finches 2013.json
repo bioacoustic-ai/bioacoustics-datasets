@@ -17,7 +17,7 @@
   "license": "cc-zero",
   "life stage": "Adult",
   "locality": "RIKEN Brain Science\nInstitute in Saitama",
-  "min and max recording duration (sec)": NaN,
+  "min and max recording duration (sec)": "NaN",
   "name": "Bengalese finches 2013",
   "num. annotations": 1215,
   "num. audio files": 1215,

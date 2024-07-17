@@ -17,7 +17,7 @@
   "license": "cc-zero",
   "life stage": "Adult",
   "locality": "Birds captured in Huben, Mataian and Taipei (China), then recorded in an indoor space (either RIKEN Brain Science Institue in Japan, or locally)",
-  "min and max recording duration (sec)": NaN,
+  "min and max recording duration (sec)": "NaN",
   "name": "White-rumped munias",
   "num. annotations": 90,
   "num. audio files": 90,
