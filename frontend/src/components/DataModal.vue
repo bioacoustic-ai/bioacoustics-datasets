@@ -100,8 +100,6 @@ function getData(key: string): any {
             </div>
         </template>
         <template #body>
-            <!--TODO: some smarter stuff here maybe-->
-            <!--TODO: also order these better later-->
             <div v-for="key in nameKeys">
                 <DataGroup v-bind:title="nameLookup[key]" v-bind:content="getData(key)">
                 </DataGroup>

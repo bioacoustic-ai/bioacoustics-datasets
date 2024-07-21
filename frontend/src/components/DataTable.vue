@@ -34,7 +34,7 @@ function openModal(entry: DataEntryType) {
                 </thead>
                 <tbody>
                     <tr v-for="entry in objects" v-on:click="openModal(entry)"
-                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        class="bg-white border-b hover:bg-gray-100 cursor-pointer">
                         <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                             {{ entry.name }}
                         </th>
