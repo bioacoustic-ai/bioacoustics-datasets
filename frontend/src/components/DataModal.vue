@@ -93,7 +93,7 @@ function getData(key: string): any {
 </script>
 
 <template>
-    <fwb-modal v-if="isShowModal" @close="closeModal">
+    <fwb-modal v-if="isShowModal" @close="closeModal" size="5xl">
         <template #header>
             <div class="flex items-center text-lg">
                 {{ data?.name }}
@@ -115,3 +115,6 @@ function getData(key: string): any {
         </template>
     </fwb-modal>
 </template>
+<style>
+
+</style>
