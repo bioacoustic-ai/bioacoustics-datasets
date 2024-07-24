@@ -3,12 +3,22 @@ import DataModal from "@/components/DataModal.vue";
 import { ref } from "vue";
 import objects, { type DataEntryType } from "../data";
 import { getData, nameLookup } from "../data/formatting";
+type DataEntryKey = keyof DataEntryType;
+
+
+var dataEntries = ref(objects);
 
 var nameKeys = Object.keys(nameLookup);
 var visibleKeys = ref(["name", "datePublished"]);
 
 var currentData: DataEntryType | null = null;
 const modalRef = ref();
+
+var sortBy = ref({
+    key: "",
+    // TODO: enum for this.
+    sortDirection: 0
+});
 
 function openModal(entry: DataEntryType) {
     currentData = entry;
@@ -22,6 +32,35 @@ function updateChecked(key: string) {
         visibleKeys.value.push(key);
     }
     console.log(visibleKeys);
+}
+
+function updateSort(key: string) {
+    if (key === sortBy.value.key) {
+        sortBy.value.sortDirection = (sortBy.value.sortDirection + 1) % 2;
+    } else {
+        sortBy.value = {
+            key: key,
+            sortDirection: 0
+        };
+    }
+    sorted(sortBy.value.key as DataEntryKey, sortBy.value.sortDirection as number);
+}
+
+function sorted(prop: DataEntryKey, ascending: number) {
+    // TODO: explain this
+    var ascending = ascending ? -1 : 1;
+    // TODO: sort correctly for all cases (string | number | Date | string[] | undefined) (and not as any)
+    dataEntries.value.sort(function (a, b) {
+        var aVal = a[prop] as any;
+        var bVal = b[prop] as any;
+        if (aVal > bVal) {
+            return 1 * ascending;
+        }
+        if (aVal < bVal) {
+            return -1 * ascending;
+        }
+        return 0;
+    });
 }
 
 
@@ -48,13 +87,24 @@ function updateChecked(key: string) {
         <table class="w-full text-sm text-left text-gray-500">
             <thead class="text-xs text-gray-700 uppercase bg-gray-50">
                 <tr>
-                    <th v-for="key in visibleKeys" scope="col" class="px-6 py-3 max-w-6 overflow-x-auto text-ellipsis">
+                    <th @click="updateSort(key)" v-for="key in visibleKeys" scope="col"
+                        class="px-6 py-3 max-w-6 overflow-x-auto text-ellipsis select-none cursor-pointer">
                         {{ nameLookup[key] }}
+                        <span>
+                            <svg v-if="key === sortBy.key"
+                                class="w-2 h-2 mb-1 inline-block text-gray-800 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
+                                <path v-if="sortBy.sortDirection === 0" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" d="M5 13V1m0 0L1 5m4-4 4 4"></path>
+                                <path v-if="sortBy.sortDirection === 1" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" d="M5 1v12m0 0 4-4m-4 4L1 9"></path>
+                            </svg>
+                        </span>
                     </th>
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="entry in objects" v-on:click="openModal(entry)"
+                <tr v-for="entry in dataEntries" v-on:click="openModal(entry)"
                     class="bg-white border-b hover:bg-gray-100 cursor-pointer">
                     <th v-for="key in visibleKeys" scope="row"
                         class="px-6 py-4 font-medium  max-w-6 text-ellipsis overflow-x-hidden text-gray-900 whitespace-nowrap">

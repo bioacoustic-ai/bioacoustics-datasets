@@ -47,7 +47,7 @@ function formatDate(value: Date | undefined) {
 // In some cases, we might need to process the data before showing it. (i.e. parse dates)
 // In these cases, define the function here, by keying it with the prop name.
 var functionLookup: { [key: string]: Function } = {
-    "creators": (data: string[]) => (data as string[]).join("; "),
+    "creators": (data: string[]) => { return data ? (data as string[]).join("; ") : "" },
     "datePublished": formatDate
 };
 var functionKeys = Object.keys(functionLookup);
