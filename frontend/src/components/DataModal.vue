@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { FwbButton, FwbModal } from 'flowbite-vue';
-import moment from "moment";
 import { defineExpose, ref } from 'vue';
 import { type DataEntryType } from "../data";
+import { getData, nameLookup } from "../data/formatting";
 import DataGroup from "./DataGroup.vue";
 
 
@@ -19,76 +19,11 @@ function showModal(newData: any) {
 
     isShowModal.value = true
 }
-function formatDate(value: Date | undefined) {
-    if (!value) {
-        return "";
-    }
-    return moment(String(value)).format('MM/DD/YYYY')
-}
+
 
 defineExpose({ showModal });
 
-// TODO: consider moving this to separate JSON file/storage
-// TODO: actually finish this.
-var nameLookup: { [key: string]: string } = {
-    "additionalDescription": "Additional description",
-    "annotationsType": "annotationsType",
-    "captureDevice": "captureDevice",
-    "citeAs": "citeAs",
-    "continent": "continent",
-    "countryCode": "countryCode",
-    "creators": "creators",
-    "datePublished": "datePublished",
-    "description": "description",
-    "labellingLevel": "labellingLevel",
-    "license": "license",
-    "lifeStage": "lifeStage",
-    "locality": "locality",
-    "minAndMaxRecordingDuration": "minAndMaxRecordingDuration",
-    "name": "name",
-    "numAnnotations": "numAnnotations",
-    "numAudioFiles": "numAudioFiles",
-    "numClasses": "numClasses",
-    "numSpecies": "numSpecies",
-    "paperLink": "paperLink",
-    "physicalSetting": "physicalSetting",
-    "provider": "provider",
-    "recordingPeriod": "recordingPeriod",
-    "recordingType": "recordingType",
-    "sampleRate": "sampleRate",
-    "sizeInGb": "sizeInGb",
-    "species": "species",
-    "taxonomicClass": "taxonomicClass",
-    "totalDuration": "totalDuration",
-    "url": "url",
-    "version": "version"
-};
-
-// In some cases, we might need to process the data before showing it. (i.e. parse dates)
-// In these cases, define the function here, by keying it with the prop name.
-var functionLookup: { [key: string]: Function } = {
-    "creators": (data: string[]) => (data as string[]).join("; "),
-    "datePublished": formatDate
-}
-
 var nameKeys = Object.keys(nameLookup);
-var functionKeys = Object.keys(functionLookup);
-type DataEntryKey = keyof DataEntryType;
-
-// Actually returns a string!
-function getData(key: string): any {
-    if (!data) {
-        return "";
-    }
-
-    var propData = data[key as DataEntryKey];
-    if (functionKeys.includes(key)) {
-        propData = functionLookup[key](propData);
-    }
-
-    return propData;
-}
-
 
 </script>
 
@@ -100,8 +35,8 @@ function getData(key: string): any {
             </div>
         </template>
         <template #body>
-            <div v-for="key in nameKeys">
-                <DataGroup v-bind:title="nameLookup[key]" v-bind:content="getData(key)">
+            <div v-for="key in nameKeys" v-if="data">
+                <DataGroup v-bind:title="nameLookup[key]" v-bind:content="getData(data, key)">
                 </DataGroup>
             </div>
 
@@ -117,4 +52,4 @@ function getData(key: string): any {
 </template>
 <style>
 
-</style>
+</style>../data/formatting
