@@ -10,6 +10,7 @@ var dataEntries = ref(objects);
 
 var nameKeys = Object.keys(nameLookup);
 var visibleKeys = ref(["name", "datePublished"]);
+var hiddenKeys = ["nameLink", "paperLink"];
 
 var currentData: DataEntryType | null = null;
 const modalRef = ref();
@@ -69,7 +70,7 @@ function sorted(prop: DataEntryKey, ascending: number) {
 <template>
     <div class="max-h-32 overflow-y-scroll mb-5">
         <div class="flex flex-wrap place-content-center">
-            <div v-for="key in nameKeys"
+            <div v-for="key in nameKeys.filter(x => !hiddenKeys.includes(x))"
                 class="flex items-center p-4 border border-gray-200 rounded xs:w-1/4 sm:w-1/5 lg:w-1/6 xl:w-1/6 m-1 h-6 cursor-pointer">
                 <input v-bind:id="key" v-bind:checked="visibleKeys.includes(key)" @change="updateChecked(key)"
                     type="checkbox" v-bind:value="key" v-bind:name="key"
