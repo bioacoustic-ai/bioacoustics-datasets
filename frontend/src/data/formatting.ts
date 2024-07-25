@@ -37,7 +37,8 @@ var nameLookup: { [key: string]: string } = {
     "version": "version"
 };
 
-function formatDate(value: Date | undefined) {
+function formatDate(entry: DataEntryType, key: string) {
+    var value = entry[key as DataEntryKey];
     if (!value) {
         return "";
     }
@@ -47,9 +48,17 @@ function formatDate(value: Date | undefined) {
 // In some cases, we might need to process the data before showing it. (i.e. parse dates)
 // In these cases, define the function here, by keying it with the prop name.
 var functionLookup: { [key: string]: Function } = {
-    "creators": (data: string[]) => { return data ? (data as string[]).join("; ") : "" },
-    "datePublished": formatDate
+    "creators": (entry: DataEntryType, key: string) => {
+        var data = entry[key as DataEntryKey] as string[];
+        return data ? (data as string[]).join("; ") : "";
+    },
+    "datePublished": formatDate,
+    "name": (entry: DataEntryType, key: string) => {
+        return `<a target="_blank" href="${entry["url" as DataEntryKey]}">${entry["name" as DataEntryKey]}</a>`;
+    },
 };
+
+
 var functionKeys = Object.keys(functionLookup);
 
 // Actually returns a string!
@@ -60,7 +69,7 @@ function getData(entry: DataEntryType, key: string): any {
 
     var propData = entry[key as DataEntryKey];
     if (functionKeys.includes(key)) {
-        propData = functionLookup[key](propData);
+        propData = functionLookup[key](entry, key);
     }
     return propData;
 }

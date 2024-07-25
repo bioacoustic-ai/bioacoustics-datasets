@@ -109,7 +109,7 @@ function sorted(prop: DataEntryKey, ascending: number) {
                     class="bg-white border-b hover:bg-gray-100 cursor-pointer">
                     <th v-for="key in visibleKeys" scope="row"
                         class="px-6 py-4 font-medium  max-w-6 text-ellipsis overflow-x-hidden text-gray-900 whitespace-nowrap">
-                        {{ getData(entry, key) }}
+                        <div v-html="getData(entry, key)"></div>
                     </th>
                 </tr>
             </tbody>
