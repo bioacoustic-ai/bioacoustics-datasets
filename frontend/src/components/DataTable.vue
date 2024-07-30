@@ -12,7 +12,7 @@ var nameKeys = Object.keys(nameLookup);
 var visibleKeys = ref(["name", "datePublished"]);
 var hiddenKeys = ["nameLink", "paperLink"];
 
-var currentData: DataEntryType | null = null;
+var currentData = ref<DataEntryType>(objects[0]);
 const modalRef = ref();
 
 var sortBy = ref({
@@ -22,8 +22,8 @@ var sortBy = ref({
 });
 
 function openModal(entry: DataEntryType) {
-    currentData = entry;
-    modalRef.value.showModal(entry);
+    currentData.value = entry;
+    modalRef.value.showModal();
 }
 
 function updateChecked(key: string) {
@@ -32,7 +32,6 @@ function updateChecked(key: string) {
     } else {
         visibleKeys.value.push(key);
     }
-    console.log(visibleKeys);
 }
 
 function updateSort(key: string) {

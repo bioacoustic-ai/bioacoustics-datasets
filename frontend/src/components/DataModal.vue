@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { FwbButton, FwbModal } from 'flowbite-vue';
-import { defineExpose, ref } from 'vue';
+import { defineExpose, ref, defineProps, type PropType } from 'vue';
 import { type DataEntryType } from "../data";
 import { getData, nameLookup } from "../data/formatting";
 import DataGroup from "./DataGroup.vue";
@@ -9,16 +9,16 @@ import DataGroup from "./DataGroup.vue";
 
 const isShowModal = ref(false);
 
-var data: DataEntryType | null = null;
-
 function closeModal() {
     isShowModal.value = false
 }
-function showModal(newData: any) {
-    data = newData;
-
+function showModal() {
     isShowModal.value = true
 }
+
+var props = defineProps({
+    data: Object as PropType<DataEntryType>
+})
 
 
 defineExpose({ showModal });
@@ -31,12 +31,12 @@ var nameKeys = Object.keys(nameLookup);
     <fwb-modal v-if="isShowModal" @close="closeModal" size="5xl">
         <template #header>
             <div class="flex items-center text-lg">
-                {{ data?.name }}
+                {{ props.data?.name }}
             </div>
         </template>
         <template #body>
-            <div v-for="key in nameKeys" v-if="data">
-                <DataGroup v-bind:title="nameLookup[key]" v-bind:content="getData(data, key)">
+            <div v-for="key in nameKeys" v-if="props.data">
+                <DataGroup v-bind:title="nameLookup[key]" v-bind:content="getData(props.data, key)">
                 </DataGroup>
             </div>
 
@@ -52,4 +52,4 @@ var nameKeys = Object.keys(nameLookup);
 </template>
 <style>
 
-</style>../data/formatting
+</style>
