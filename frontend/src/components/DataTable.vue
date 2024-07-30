@@ -13,12 +13,17 @@ var visibleKeys = ref(["name", "datePublished"]);
 var hiddenKeys = ["nameLink", "paperLink"];
 
 var currentData = ref<DataEntryType>(objects[0]);
+
+enum SortDirection {
+    Ascending = 0,
+    Descending = 1
+}
+
 const modalRef = ref();
 
 var sortBy = ref({
     key: "",
-    // TODO: enum for this.
-    sortDirection: 0
+    sortDirection: SortDirection.Ascending
 });
 
 function openModal(entry: DataEntryType) {
@@ -40,24 +45,24 @@ function updateSort(key: string) {
     } else {
         sortBy.value = {
             key: key,
-            sortDirection: 0
+            sortDirection: SortDirection.Ascending
         };
     }
     sorted(sortBy.value.key as DataEntryKey, sortBy.value.sortDirection as number);
 }
 
-function sorted(prop: DataEntryKey, ascending: number) {
+function sorted(prop: DataEntryKey, ascending: SortDirection) {
     // TODO: explain this
-    var ascending = ascending ? -1 : 1;
+    var mult = ascending === SortDirection.Ascending ? -1 : 1;
     // TODO: sort correctly for all cases (string | number | Date | string[] | undefined) (and not as any)
     dataEntries.value.sort(function (a, b) {
         var aVal = a[prop] as any;
         var bVal = b[prop] as any;
         if (aVal > bVal) {
-            return 1 * ascending;
+            return 1 * mult;
         }
         if (aVal < bVal) {
-            return -1 * ascending;
+            return -1 * mult;
         }
         return 0;
     });
