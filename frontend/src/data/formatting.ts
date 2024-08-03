@@ -56,6 +56,7 @@ var functionLookup: { [key: string]: Function } = {
     "name": (entry: DataEntryType, key: string) => {
         return `<a target="_blank" href="${entry["url" as DataEntryKey]}">${entry["name" as DataEntryKey]}</a>`;
     },
+    "paperLink": (entry: DataEntryType, key: string) => { return entry["paperLink"] == null ? "" : `<a target="_blank" href="${entry["paperLink" as DataEntryKey]}">paper link`; }
 };
 
 
