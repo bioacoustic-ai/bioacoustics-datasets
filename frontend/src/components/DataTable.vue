@@ -112,8 +112,8 @@ function sorted(prop: DataEntryKey, ascending: SortDirection) {
                 <tr v-for="entry in dataEntries" v-on:click="openModal(entry)"
                     class="bg-white border-b hover:bg-gray-100 cursor-pointer">
                     <th v-for="key in visibleKeys" scope="row"
-                        class="px-6 py-4 font-medium  max-w-6 overflow-hidden text-ellipsis text-gray-900 whitespace-nowrap">
-                        <div v-html="getData(entry, key)"></div>
+                        class="px-6 py-4 font-medium max-w-6 text-gray-900 whitespace-nowrap">
+                        <div class="truncate" v-html="getData(entry, key)"></div>
                     </th>
                 </tr>
             </tbody>
