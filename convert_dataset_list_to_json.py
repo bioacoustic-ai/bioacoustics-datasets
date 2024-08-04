@@ -68,9 +68,6 @@ def write_croissant_metadata(croissant_metadata: mlc.Metadata, file_path: str) -
         f.write("\n")  # Terminate file with newline
 
 
-# TODO: see if I should convert html to plain text in the descriptions. Fix encoding
-
-
 def create_datasets_metadata_from_table(
     datasets_path: str, output_folder: str, use_croissant_format: bool = False
 ) -> str:
