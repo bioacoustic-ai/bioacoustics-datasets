@@ -1,9 +1,19 @@
+import json
 from pathlib import Path
 from typing import Union
 
-from utils import load_json, write_json
-
 JSON_FOLDER = Path().resolve() / "datasets_json"
+
+
+def load_json(path: str) -> dict:
+    with open(path, "r") as f:
+        data = json.load(f)
+    return data
+
+
+def write_json(path: str, data) -> None:
+    with open(path, "w") as f:
+        json.dump(data, f, indent=2, sort_keys=True)
 
 
 def change_nan_to_empty_string(filepath: Union[str, Path]) -> None:

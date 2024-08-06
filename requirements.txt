@@ -1,7 +1,0 @@
-soundfile==0.12.1
-mlcroissant==1.0.5
-pandas==2.2.2
-openpyxl==3.1.5
-tqdm==4.66.4
-requests==2.32.3
-html2text==2024.2.26
