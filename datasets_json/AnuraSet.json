@@ -2,7 +2,6 @@
   "additionalDescription": "Contains both weak (labels for 1 min of audio) and strong labels. Each clip is one minute long.  An extension of this dataset that comprises only unlabeled data is also available in zenodo",
   "annotationsType": "Species, onset and offset of the call (strong labeling), intensity of calls (weak labelling)",
   "captureDevice": "Omnidirectional microphones SM4",
-  "citeAs": null,
   "continent": "South America",
   "countryCode": "BR",
   "creators": [
@@ -45,7 +44,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 18.6,
-  "species": "",
   "taxonomicClass": "Anuran",
   "totalDuration": 27,
   "url": "https://zenodo.org/records/8056090",

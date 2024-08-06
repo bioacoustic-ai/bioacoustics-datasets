@@ -2,7 +2,6 @@
   "additionalDescription": "Part of BirdClef 2022 challenge. Part of the BIRB benchmark",
   "annotationsType": "Species with onset/offset detection time, and frequencies",
   "captureDevice": "Wildlife Acoustics Inc. Song Meters (models 2, 4, or Mini)",
-  "citeAs": null,
   "continent": "North America",
   "countryCode": "US-HI",
   "creators": [
@@ -31,7 +30,6 @@
   "recordingType": "Continuous",
   "sampleRate": "",
   "sizeInGb": 5.8,
-  "species": "",
   "taxonomicClass": "Birds",
   "totalDuration": 51,
   "url": "https://zenodo.org/records/7078499",

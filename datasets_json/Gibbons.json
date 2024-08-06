@@ -2,7 +2,6 @@
   "additionalDescription": "Songs recorded on three males with different age.",
   "annotationsType": "",
   "captureDevice": "eight-channel microphone array (TAMAGO-03)",
-  "citeAs": null,
   "continent": "Asia",
   "countryCode": "JP",
   "creators": [
@@ -28,7 +27,6 @@
   "recordingType": "",
   "sampleRate": "",
   "sizeInGb": 3.16,
-  "species": "",
   "taxonomicClass": "Gibbons (different species)",
   "totalDuration": "",
   "url": "http://datadryad.org/stash/dataset/doi:10.5061/dryad.mn12jv2",

@@ -2,7 +2,6 @@
   "additionalDescription": "The audio files include background noise files which took place right before and after the vocalisations (so it serves as context). Recorded from 5-15 meters of distance. Includes recordings from different years (from the same individuals?). Check if we do have files from several years",
   "annotationsType": "Individuals",
   "captureDevice": "Sennheiser ME67 microphone, Marantz PMD660 or 661 solid-state recorder",
-  "citeAs": null,
   "continent": "Europe",
   "countryCode": "CZ",
   "creators": [
@@ -30,7 +29,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 7.7,
-  "species": "",
   "taxonomicClass": "Birds",
   "totalDuration": "",
   "url": "https://zenodo.org/records/1413495",

@@ -2,7 +2,6 @@
   "additionalDescription": "Is an expansion of InsectSet32, and includes it partially. Includes also recordings from xeno-canto",
   "annotationsType": "Species, source of the audio files, person who recorded",
   "captureDevice": "Various",
-  "citeAs": null,
   "continent": "Global",
   "countryCode": "",
   "creators": [
@@ -27,7 +26,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 4.7,
-  "species": "",
   "taxonomicClass": "Insects (Orthoptera and Cicadidae)",
   "totalDuration": 22,
   "url": "https://zenodo.org/records/8252141",

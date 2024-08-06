@@ -2,7 +2,6 @@
   "additionalDescription": "Part of the BIRB benchmark, part of the BirdClef 2021 test set",
   "annotationsType": "Species with onset/offset detection time, and frequencies",
   "captureDevice": "SWIFT recording units",
-  "citeAs": null,
   "continent": "North America",
   "countryCode": "US-CA",
   "creators": [
@@ -31,7 +30,6 @@
   "recordingType": "Continuous",
   "sampleRate": "",
   "sizeInGb": 3.2,
-  "species": "",
   "taxonomicClass": "Birds",
   "totalDuration": 33,
   "url": "https://zenodo.org/records/7050014",

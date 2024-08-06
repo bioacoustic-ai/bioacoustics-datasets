@@ -2,7 +2,6 @@
   "additionalDescription": "Contains both strongly labelled files (141), partially labeled recordings (215), and unlabelled recordings (the rest). The annotations are made on segments of two seconds. Includes ",
   "annotationsType": "Species, environment, vocalisation type",
   "captureDevice": "Various",
-  "citeAs": null,
   "continent": "North America",
   "countryCode": "US-CA, US-OR, US-WA",
   "creators": [
@@ -36,8 +35,7 @@
   "recordingType": "Continuous",
   "sampleRate": "",
   "sizeInGb": 20.3,
-  "species": "",
-  "taxonomicClass": "Birds (majority), Mammals",
+  "taxonomicClass": "Aves",
   "totalDuration": 131.25,
   "url": "https://zenodo.org/records/8047850",
   "version": 1

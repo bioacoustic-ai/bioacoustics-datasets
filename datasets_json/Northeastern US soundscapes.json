@@ -2,7 +2,6 @@
   "additionalDescription": "Parts of this dataset have been in the DCASE challenges.",
   "annotationsType": "Species with onset/offset detection time, and frequencies",
   "captureDevice": "30 first-generation SWIFT recorders",
-  "citeAs": null,
   "continent": "North America",
   "countryCode": "US-NY",
   "creators": [
@@ -29,7 +28,6 @@
   "recordingType": "Continuous",
   "sampleRate": "",
   "sizeInGb": 27.8,
-  "species": "",
   "taxonomicClass": "Birds",
   "totalDuration": 285,
   "url": "https://zenodo.org/records/7079380",

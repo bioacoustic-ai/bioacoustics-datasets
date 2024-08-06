@@ -2,7 +2,6 @@
   "additionalDescription": "Wetlands birds dataset. Recordings taken from Xeno-Canto. Focuses on species that can be found in a wetland in spain. Seems like each recording has one annotation, download and check the spectrograms.",
   "annotationsType": "Species",
   "captureDevice": "Various",
-  "citeAs": null,
   "continent": "",
   "countryCode": "",
   "creators": [
@@ -29,7 +28,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 4,
-  "species": "",
   "taxonomicClass": "Birds",
   "totalDuration": 3.4,
   "url": "https://zenodo.org/records/7505820",

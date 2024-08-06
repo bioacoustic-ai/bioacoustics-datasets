@@ -2,7 +2,6 @@
   "additionalDescription": "One male was recorded. Includes three non-syllable classes for other events (call, irrelevant sounds, silence). One audio file is one song",
   "annotationsType": "Onset and offset of syllables",
   "captureDevice": "RODE M3 microphone",
-  "citeAs": null,
   "continent": "",
   "countryCode": "",
   "creators": [
@@ -31,7 +30,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 0.856,
-  "species": "",
   "taxonomicClass": "Birds",
   "totalDuration": 3,
   "url": "https://zenodo.org/records/6521932",

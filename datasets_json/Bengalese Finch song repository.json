@@ -2,7 +2,6 @@
   "additionalDescription": "Recordings made on four male individuals that have been isolated. Warning: the same label for different individuals doesn't mean that the syllable is the same.",
   "annotationsType": "Individual, Syllable",
   "captureDevice": "Lavalier microphone",
-  "citeAs": "Nicholson, David; Queen, Jonah E.; J. Sober, Samuel (2017). Bengalese Finch song repository. figshare. Dataset. https://doi.org/10.6084/m9.figshare.4805749.v9",
   "continent": "North America",
   "countryCode": "US-GA",
   "creators": [
@@ -29,7 +28,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 5.9,
-  "species": "Lonchura striata domestica",
   "taxonomicClass": "Bird",
   "totalDuration": 14.75,
   "url": "https://figshare.com/articles/dataset/Bengalese_Finch_song_repository/4805749",

@@ -2,7 +2,6 @@
   "additionalDescription": "Multi-label annotations. Part of the BEANS and the BIRB benchmarks. Audio files are continuous segments from four recordings",
   "annotationsType": "Onset and offset, frequency range, and species",
   "captureDevice": "AudioMoth version 1.0",
-  "citeAs": null,
   "continent": "North America",
   "countryCode": "US-PA",
   "creators": [
@@ -30,7 +29,6 @@
   "recordingType": "Continuous",
   "sampleRate": "",
   "sizeInGb": 1.18,
-  "species": "",
   "taxonomicClass": "Birds",
   "totalDuration": 6.4,
   "url": "http://datadryad.org/stash/dataset/doi:10.5061/dryad.d2547d81z",

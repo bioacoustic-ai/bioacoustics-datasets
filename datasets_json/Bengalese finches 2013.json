@@ -2,7 +2,6 @@
   "additionalDescription": "Recordings of undirected songs. The birds were born and raised in the RIKEN Brain Science Institute.",
   "annotationsType": "Individual",
   "captureDevice": "Not specified",
-  "citeAs": null,
   "continent": "Asia",
   "countryCode": "JP",
   "creators": [
@@ -30,7 +29,6 @@
   "recordingType": "Clips",
   "sampleRate": 44.1,
   "sizeInGb": 1.1,
-  "species": "Lonchura striata domestica",
   "taxonomicClass": "Bird",
   "totalDuration": 5,
   "url": "https://zenodo.org/records/5022578",

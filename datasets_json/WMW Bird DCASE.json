@@ -2,7 +2,6 @@
   "additionalDescription": "Is a subset from the WMW Bird dataset.",
   "annotationsType": "species and call type",
   "captureDevice": "Various",
-  "citeAs": null,
   "continent": "",
   "countryCode": "",
   "creators": [
@@ -42,7 +41,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": "",
-  "species": "",
   "taxonomicClass": "Birds",
   "totalDuration": 4.6,
   "url": "https://zenodo.org/records/10829604",

@@ -2,7 +2,6 @@
   "additionalDescription": "Calls recorded from 8 adult rhesus macaques (4 males, 4 females) in a laboratory (reward-based, the apes got a reward after they produced the vocalisation). Only one type of vocalisation, the \"coo\" call",
   "annotationsType": "Individuals",
   "captureDevice": "directional Sennheiser ME66",
-  "citeAs": null,
   "continent": "",
   "countryCode": "",
   "creators": [
@@ -32,7 +31,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 0.132,
-  "species": "",
   "taxonomicClass": "Macaques",
   "totalDuration": 0.7,
   "url": "http://datadryad.org/stash/dataset/doi:10.5061/dryad.7f4p9",

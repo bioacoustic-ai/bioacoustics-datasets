@@ -2,7 +2,6 @@
   "additionalDescription": "The dataset is uploaded to the macaulay library",
   "annotationsType": "Individual, sex, identity of mother, birth date, context of call (and other)",
   "captureDevice": "directional Sennheiser MKH 815T microphone attached to a Nagra sound recorder",
-  "citeAs": null,
   "continent": "Africa",
   "countryCode": "TZ",
   "creators": [
@@ -30,7 +29,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 17,
-  "species": "",
   "taxonomicClass": "Chimpanzes (Gombe Chimpanzes)",
   "totalDuration": "a few hours",
   "url": "http://datadryad.org/stash/dataset/doi:10.5061/dryad.5tq80",

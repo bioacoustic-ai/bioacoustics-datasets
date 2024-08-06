@@ -2,7 +2,6 @@
   "additionalDescription": "The majority of annotated files have only one annotation, some have several. Part of the BEANS benchmark",
   "annotationsType": "Individual, their behaviour, and the context",
   "captureDevice": "Chambers with microphone Avisoft-Bioacoustics Knowles FG-O",
-  "citeAs": "Prat, Yosef; Taub, Mor; Pratt, Ester; Yovel, Yossi (2017). An annotated dataset of Egyptian fruit bat vocalizations across varying contexts and during vocal ontogeny. figshare. Collection. https://doi.org/10.6084/m9.figshare.c.3666502.v2",
   "continent": "Asia",
   "countryCode": "IL",
   "creators": [
@@ -30,7 +29,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": "",
-  "species": "",
   "taxonomicClass": "Bats",
   "totalDuration": "",
   "url": "https://api.figshare.com/v2/collections/3666502",

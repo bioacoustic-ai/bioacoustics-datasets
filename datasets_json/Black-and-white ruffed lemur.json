@@ -2,7 +2,6 @@
   "additionalDescription": "Only contains calls. Not every part of the audio is labelled",
   "annotationsType": "Presence or absence of the black-and-white ruffed lemur",
   "captureDevice": "2 Swift recorders",
-  "citeAs": null,
   "continent": "Africa",
   "countryCode": "MG",
   "creators": [
@@ -31,7 +30,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 13.3,
-  "species": "",
   "taxonomicClass": "Lemurs",
   "totalDuration": 60,
   "url": "https://zenodo.org/records/6331594",

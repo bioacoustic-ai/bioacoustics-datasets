@@ -2,7 +2,6 @@
   "additionalDescription": "Part of DCASE2024 challenge (task 5)",
   "annotationsType": "Vocalisation type",
   "captureDevice": "Collars from Followit Sweden AB",
-  "citeAs": null,
   "continent": "Africa",
   "countryCode": "KE",
   "creators": [
@@ -42,7 +41,6 @@
   "recordingType": "Continuous",
   "sampleRate": "",
   "sizeInGb": "",
-  "species": "",
   "taxonomicClass": "Hyenas",
   "totalDuration": 5,
   "url": "https://zenodo.org/records/10829604",

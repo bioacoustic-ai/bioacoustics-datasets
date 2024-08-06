@@ -2,7 +2,6 @@
   "additionalDescription": "Recordings come from both a citizen science program, and a more controlled environment",
   "annotationsType": "Timed presence or absence of bee sound.",
   "captureDevice": "Various",
-  "citeAs": null,
   "continent": "Global",
   "countryCode": "",
   "creators": [
@@ -28,7 +27,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 3.7,
-  "species": "Apis mellifera",
   "taxonomicClass": "Insect",
   "totalDuration": 12,
   "url": "https://zenodo.org/records/1321278",

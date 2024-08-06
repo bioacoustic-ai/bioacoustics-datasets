@@ -2,7 +2,6 @@
   "additionalDescription": "",
   "annotationsType": "Vocalisation type",
   "captureDevice": "Collars (TS Market, Edic Mini Tiny+ A77)",
-  "citeAs": null,
   "continent": "Africa",
   "countryCode": "ZA",
   "creators": [
@@ -42,7 +41,6 @@
   "recordingType": "Continous",
   "sampleRate": "",
   "sizeInGb": "",
-  "species": "",
   "taxonomicClass": "Terrestrial mammals (meerkats)",
   "totalDuration": 1.17,
   "url": "https://zenodo.org/records/10829604",

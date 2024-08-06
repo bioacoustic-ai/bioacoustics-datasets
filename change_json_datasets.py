@@ -14,6 +14,16 @@ def change_nan_to_empty_string(filepath: Union[str, Path]) -> None:
     write_json(filepath, dataset)
 
 
+def delete_keys(filepath, keys_to_delete=["citeAs", "species"]):
+    dataset = load_json(filepath)
+    for k in keys_to_delete:
+        dataset.pop(k)
+    write_json(
+        filepath,
+        dataset,
+    )
+
+
 def change_json_datasets(
     datasets_folder: Path, modifier_function=change_nan_to_empty_string
 ) -> None:
@@ -28,4 +38,4 @@ def change_json_datasets(
 
 
 if __name__ == "__main__":
-    change_json_datasets(JSON_FOLDER)
+    change_json_datasets(JSON_FOLDER, modifier_function=delete_keys)

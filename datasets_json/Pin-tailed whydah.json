@@ -2,7 +2,6 @@
   "additionalDescription": "Only contains calls. Not every part of the audio is labelled",
   "annotationsType": "Presence or absence of the pin-tailed whydah",
   "captureDevice": "1 AudioMoth",
-  "citeAs": null,
   "continent": "Africa",
   "countryCode": "ZA",
   "creators": [
@@ -27,7 +26,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 1.8,
-  "species": "",
   "taxonomicClass": "Birds",
   "totalDuration": 6,
   "url": "https://zenodo.org/records/6330711",

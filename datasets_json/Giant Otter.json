@@ -2,7 +2,6 @@
   "additionalDescription": "Includes vocalisations from neonate otters. Only the vocalisation type and the context are strongly labelled, the rest is partially labeled. Only a minority (2,7%) of vocalisations are from neonates.",
   "annotationsType": "Vocalisation type, age, sex, geographical, location, individual, context",
   "captureDevice": "Directional sennheiser microphone MKH 416-P48U3 for air-borne vocalisations, and hydrophone RESON TC4013. ",
-  "citeAs": "A. S. Mumm, Christina; Kn\u00f6rnschild, Mirjam (2016). The Vocal Repertoire of Adult and Neonate Giant Otters (<i>Pteronura brasiliensis</i>). PLOS ONE. Dataset. https://doi.org/10.1371/journal.pone.0112562",
   "continent": "South America, Europe",
   "countryCode": "PE, DE",
   "creators": [
@@ -28,7 +27,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 0.552,
-  "species": "",
   "taxonomicClass": "Terrestrial mammal",
   "totalDuration": "",
   "url": "https://plos.figshare.com/articles/dataset/The_Vocal_Repertoire_of_Adult_and_Neonate_Giant_Otters_Pteronura_brasiliensis_/1238781",

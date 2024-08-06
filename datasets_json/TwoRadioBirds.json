@@ -2,7 +2,6 @@
   "additionalDescription": "Contains a minority of labelled data and a majority of unlabelled data. Includes accelerometer data. Includes two birds vocalisations, one male, and one female",
   "annotationsType": "Onset and offset of vocalisations, individuals",
   "captureDevice": "Wall-mounted Knowles FG-23329-D65 microphone",
-  "citeAs": null,
   "continent": "",
   "countryCode": "",
   "creators": [
@@ -27,7 +26,6 @@
   "recordingType": "Continuous",
   "sampleRate": "",
   "sizeInGb": 11.2,
-  "species": "",
   "taxonomicClass": "Birds",
   "totalDuration": 11,
   "url": "https://zenodo.org/records/7253729",

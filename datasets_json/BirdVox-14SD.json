@@ -2,7 +2,6 @@
   "additionalDescription": "Data comes from 9 different units. Was used as a test dataset for a model trained on BirdVox-ANAFCC",
   "annotationsType": "Species with their taxonomic code",
   "captureDevice": "ROBIN autonomous recording units",
-  "citeAs": null,
   "continent": "North America",
   "countryCode": "US-NY",
   "creators": [
@@ -30,7 +29,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 1.3,
-  "species": "",
   "taxonomicClass": "Birds",
   "totalDuration": "",
   "url": "https://zenodo.org/records/3667094",

@@ -2,7 +2,6 @@
   "additionalDescription": "Recorded 5 colonies, 3 wild, and 2 captive. One of the colonies seems to be the same as the one in RookID. Focuses on one type of call only",
   "annotationsType": "Onset and offset of nest call, individual, colony",
   "captureDevice": " Song Meter 4 recorder",
-  "citeAs": null,
   "continent": "Europe",
   "countryCode": "FR, UK",
   "creators": [
@@ -27,7 +26,6 @@
   "recordingType": "Continuous",
   "sampleRate": "",
   "sizeInGb": 27.1,
-  "species": "",
   "taxonomicClass": "Birds",
   "totalDuration": "",
   "url": "https://zenodo.org/records/11048542",

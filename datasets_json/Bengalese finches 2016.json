@@ -2,7 +2,6 @@
   "additionalDescription": "The birds were put in a sound attenuating chamber, and were acclimated to isolation for at least two days before recording.",
   "annotationsType": "Individual, timed song sequences, timed notes",
   "captureDevice": "Microphone (PRO 35, Audio-Technica Corporation, Japan), an amplifier (MicTube Duo, Alesis, United States), and an audio interface (OCTA-CAPTURE, Roland, Japan)",
-  "citeAs": "Koumura, Takuya (2016). BirdsongRecognition. figshare. Media. https://doi.org/10.6084/m9.figshare.3470165.v1",
   "continent": "Asia",
   "countryCode": "JP",
   "creators": [
@@ -27,7 +26,6 @@
   "recordingType": "Clips",
   "sampleRate": 32.0,
   "sizeInGb": 1.39,
-  "species": "Lonchura striata domestica",
   "taxonomicClass": "Bird",
   "totalDuration": 9.8,
   "url": "https://figshare.com/articles/media/BirdsongRecognition/3470165",
