@@ -2,7 +2,6 @@
   "additionalDescription": "Recording on one male. Part of DCASE2024 challenge (task 5)",
   "annotationsType": "Jackdaw call",
   "captureDevice": "Collar (Edic Mini Tiny A31)",
-  "citeAs": null,
   "continent": "Europe",
   "countryCode": "DE",
   "creators": [
@@ -42,7 +41,6 @@
   "recordingType": "Continuous",
   "sampleRate": "",
   "sizeInGb": "",
-  "species": "",
   "taxonomicClass": "Birds (Jackdaw)",
   "totalDuration": 0.17,
   "url": "https://zenodo.org/records/10829604",

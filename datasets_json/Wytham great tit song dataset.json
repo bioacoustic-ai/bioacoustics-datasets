@@ -2,7 +2,6 @@
   "additionalDescription": "Studies one population. Used algorithms to annotate the song types and the note segmentation. The song segmentation has been annotated manually. ",
   "annotationsType": "Individuals, onset and offset of notes, song type, nest site",
   "captureDevice": "AudioMoth recorders",
-  "citeAs": null,
   "continent": "Europe",
   "countryCode": "UK",
   "creators": [
@@ -27,7 +26,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 11.4,
-  "species": "",
   "taxonomicClass": "Birds",
   "totalDuration": "",
   "url": "https://osf.io/n8ac9/",

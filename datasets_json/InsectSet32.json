@@ -2,7 +2,6 @@
   "additionalDescription": "Sounds taken from Global Cicada Sound Collection hosted in Bioacoustica, and the collection of  Baudewijn Od\u00e9",
   "annotationsType": "Species",
   "captureDevice": "Various",
-  "citeAs": null,
   "continent": "Global",
   "countryCode": "",
   "creators": [
@@ -27,7 +26,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": "",
-  "species": "",
   "taxonomicClass": "Insects (Orthoptera and Cicadidae)",
   "totalDuration": 1,
   "url": "https://zenodo.org/records/7072196",

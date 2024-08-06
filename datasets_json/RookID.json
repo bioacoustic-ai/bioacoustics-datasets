@@ -2,7 +2,6 @@
   "additionalDescription": "Recordings of a captive colony, with 8 males and 7 females",
   "annotationsType": "Individuals, onset and offset of vocalisations, context",
   "captureDevice": "1 to 3 Song Meter 4 recorders",
-  "citeAs": null,
   "continent": "Europe",
   "countryCode": "FR",
   "creators": [
@@ -30,7 +29,6 @@
   "recordingType": "Continuous",
   "sampleRate": "",
   "sizeInGb": 22.1,
-  "species": "",
   "taxonomicClass": "Birds",
   "totalDuration": 17.4,
   "url": "https://zenodo.org/records/6091940",

@@ -2,7 +2,6 @@
   "additionalDescription": "Contains only flight calls. Aggregated from different datasets under a common taxonomy: BirdVox-70k, BirdVox-full-night, CLO-43SD, CLO-SWTH, CLO-WTSP, the Macaulay Library, Xeno-Canto, and Old Bird",
   "annotationsType": "Species with their taxonomic code",
   "captureDevice": "Various",
-  "citeAs": null,
   "continent": "North America",
   "countryCode": "",
   "creators": [
@@ -32,7 +31,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 5.8,
-  "species": "",
   "taxonomicClass": "Birds",
   "totalDuration": "",
   "url": "https://zenodo.org/records/5950000",

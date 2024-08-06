@@ -2,7 +2,6 @@
   "additionalDescription": "Some extra data was labelled.",
   "annotationsType": "Onset and offset of Gibbon calls, and type of calls",
   "captureDevice": "8 Song Meter SM3 recorders",
-  "citeAs": null,
   "continent": "Asia",
   "countryCode": "CN",
   "creators": [
@@ -38,7 +37,6 @@
   "recordingType": "Continuous",
   "sampleRate": "",
   "sizeInGb": 159.3,
-  "species": "",
   "taxonomicClass": "Gibbons (hainan gibbons)",
   "totalDuration": 6000,
   "url": "https://zenodo.org/records/3991714",

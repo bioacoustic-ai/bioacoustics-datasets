@@ -2,7 +2,6 @@
   "additionalDescription": "Studies dialects across the united states. Data gathered from Xeno-Canto",
   "annotationsType": "Species",
   "captureDevice": "Various",
-  "citeAs": null,
   "continent": "North America",
   "countryCode": "US",
   "creators": [
@@ -30,7 +29,6 @@
   "recordingType": "Clips",
   "sampleRate": 16.0,
   "sizeInGb": 1.9,
-  "species": "Agelaius phoeniceus, Cardinalis cardinalis, Certhia americana, Corvus brachyrhynchos, Molothrus ater, Setophaga aestiva, Setophaga ruticilla, Spinus tristis, Tringa semipalmata, Turdus migratorius",
   "taxonomicClass": "Aves",
   "totalDuration": 25.48666667,
   "url": "https://zenodo.org/records/11544734",

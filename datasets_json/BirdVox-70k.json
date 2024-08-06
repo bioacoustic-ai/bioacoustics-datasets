@@ -2,7 +2,6 @@
   "additionalDescription": "The data comes from the Birdvox full night dataset. Even distribution of the positive and negative classes",
   "annotationsType": "Presence or absence of flight calls, frequency centre of calls",
   "captureDevice": "ROBIN autonomous recording units",
-  "citeAs": null,
   "continent": "North America",
   "countryCode": "US-NY",
   "creators": [
@@ -31,7 +30,6 @@
   "recordingType": "Clips",
   "sampleRate": 24.0,
   "sizeInGb": 6.8,
-  "species": "Not specified",
   "taxonomicClass": "Bird",
   "totalDuration": 3,
   "url": "https://zenodo.org/records/1226427",

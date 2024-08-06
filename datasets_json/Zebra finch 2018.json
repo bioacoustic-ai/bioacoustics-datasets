@@ -2,7 +2,6 @@
   "additionalDescription": "Contains both chicks (20 days old) and adults vocalisations. Colony bred in this lab. Adult birds come from 3 different colonies from the lab or another lab at UC San francisco",
   "annotationsType": "Individual, vocalisation type, recording day",
   "captureDevice": "Not specified",
-  "citeAs": "Elie, Julie; Theunissen, Fr\u00e9d\u00e9ric E. (2020). Vocal repertoires from adult and chick, male and female zebra finches (Taeniopygia guttata). figshare. Dataset. https://doi.org/10.6084/m9.figshare.11905533.v1",
   "continent": "North America",
   "countryCode": "US-CA",
   "creators": [
@@ -28,7 +27,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 0.2,
-  "species": "",
   "taxonomicClass": "Birds",
   "totalDuration": "",
   "url": "https://figshare.com/articles/dataset/Vocal_repertoires_from_adult_and_chick_male_and_female_zebra_finches_Taeniopygia_guttata_/11905533",

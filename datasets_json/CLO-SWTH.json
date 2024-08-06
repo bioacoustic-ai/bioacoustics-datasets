@@ -2,7 +2,6 @@
   "additionalDescription": "Focuses on one species only, the swainson's thrush. Is interested in migratory species",
   "annotationsType": "- Flight call from target species\n- Flight call from non-target species\n- No flight call",
   "captureDevice": "ROBIN autonomous recording units",
-  "citeAs": null,
   "continent": "North America",
   "countryCode": "US-NY",
   "creators": [
@@ -33,7 +32,6 @@
   "recordingType": "Clips",
   "sampleRate": 22.05,
   "sizeInGb": 20,
-  "species": "Catharus ustulatus, Not Specified",
   "taxonomicClass": "Birds",
   "totalDuration": 67,
   "url": "http://datadryad.org/stash/dataset/doi:10.5061/dryad.j2t92",

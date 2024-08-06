@@ -2,7 +2,6 @@
   "additionalDescription": "The audio files include background noise files which took place reight before and after the vocalisations (so it serves as context and data aigmentation). ",
   "annotationsType": "Individuals",
   "captureDevice": "Sennheiser ME67 microphone, Marantz PMD660 or 661 solid-state recorder",
-  "citeAs": null,
   "continent": "Europe",
   "countryCode": "CZ",
   "creators": [
@@ -30,7 +29,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 1,
-  "species": "",
   "taxonomicClass": "Birds",
   "totalDuration": 2.3,
   "url": "https://zenodo.org/records/1413495",

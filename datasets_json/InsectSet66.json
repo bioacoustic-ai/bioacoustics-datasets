@@ -2,7 +2,6 @@
   "additionalDescription": "Is an expansion of InsectSet47, and includes recordings from iNaturalis",
   "annotationsType": "Species, source of the audio files, person who recorded",
   "captureDevice": "Various",
-  "citeAs": null,
   "continent": "Global",
   "countryCode": "",
   "creators": [
@@ -27,7 +26,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 5.2,
-  "species": "",
   "taxonomicClass": "Insects (Orthoptera and Cicadidae)",
   "totalDuration": 24,
   "url": "https://zenodo.org/records/8252141",

@@ -2,7 +2,6 @@
   "additionalDescription": "Focus on passerine birds. Other birds have been ignored or labelled as an \"other\" category. Focused on calls. The number of classes only includes the number of positive classes, the dataset has also 5 negative classes",
   "annotationsType": "Species",
   "captureDevice": "SM2 Wildlife Acoustics recorders + SMX-NFC microphone.",
-  "citeAs": null,
   "continent": "Europe",
   "countryCode": "PL",
   "creators": [
@@ -27,7 +26,6 @@
   "recordingType": "Continuous",
   "sampleRate": "",
   "sizeInGb": 12.3,
-  "species": "",
   "taxonomicClass": "Birds",
   "totalDuration": 56,
   "url": "https://zenodo.org/records/6359955",

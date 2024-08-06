@@ -2,7 +2,6 @@
   "additionalDescription": "Part of the BIRB benchmark, part of the BirdClef 2020 test set",
   "annotationsType": "Species with onset/offset detection time, and frequencies",
   "captureDevice": "SWIFT recording units",
-  "citeAs": null,
   "continent": "South America",
   "countryCode": "PE",
   "creators": [
@@ -29,7 +28,6 @@
   "recordingType": "Continuous",
   "sampleRate": "",
   "sizeInGb": 2.4,
-  "species": "",
   "taxonomicClass": "Birds",
   "totalDuration": 21,
   "url": "https://zenodo.org/records/7079124",

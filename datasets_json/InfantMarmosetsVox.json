@@ -2,7 +2,6 @@
   "additionalDescription": "Recorded on 5 pairs of marmosets twins. Thw twins were separated and recorded individually",
   "annotationsType": "The onset and offset of call, call type, and individual",
   "captureDevice": "Audio-Technica AT2031 microphone",
-  "citeAs": null,
   "continent": "",
   "countryCode": "",
   "creators": [
@@ -28,7 +27,6 @@
   "recordingType": "Continuous",
   "sampleRate": "",
   "sizeInGb": 21.2,
-  "species": "",
   "taxonomicClass": "Primates",
   "totalDuration": 58.33333333,
   "url": "https://zenodo.org/records/10130104",

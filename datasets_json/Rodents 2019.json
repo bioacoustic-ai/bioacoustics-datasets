@@ -2,7 +2,6 @@
   "additionalDescription": "Ultrasonic vocalisations. Laboratory animals",
   "annotationsType": "Syllables with onset and offset, vocalisation type,species",
   "captureDevice": "Commercial condenser microphone Ultra-SoundGate",
-  "citeAs": null,
   "continent": "",
   "countryCode": "",
   "creators": [
@@ -27,7 +26,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 1,
-  "species": "",
   "taxonomicClass": "Terrestrial mammal (rodents)",
   "totalDuration": "?",
   "url": "https://zenodo.org/records/3428024",

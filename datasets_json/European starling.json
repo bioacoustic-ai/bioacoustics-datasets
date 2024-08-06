@@ -2,7 +2,6 @@
   "additionalDescription": "Individuals recorded separately, and caught from the wid. Birds older than 1 year. Some of the birds were injected testoterone \"before audio recordings to increase singing behavior\". The birds don't sing in every clip",
   "annotationsType": "Individuals",
   "captureDevice": "Not specified",
-  "citeAs": null,
   "continent": "",
   "countryCode": "",
   "creators": [
@@ -30,7 +29,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 31.1,
-  "species": "",
   "taxonomicClass": "Birds",
   "totalDuration": "",
   "url": "https://zenodo.org/records/3237218",

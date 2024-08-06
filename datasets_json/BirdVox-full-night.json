@@ -2,7 +2,6 @@
   "additionalDescription": "",
   "annotationsType": "time center of flight calls, frequency center of flight calls",
   "captureDevice": "ROBIN autonomous recording units",
-  "citeAs": null,
   "continent": "North America",
   "countryCode": "US-NY",
   "creators": [
@@ -31,7 +30,6 @@
   "recordingType": "Continuous",
   "sampleRate": 24.0,
   "sizeInGb": 5.7,
-  "species": "Not specified",
   "taxonomicClass": "Bird",
   "totalDuration": 62,
   "url": "https://zenodo.org/records/1205569",

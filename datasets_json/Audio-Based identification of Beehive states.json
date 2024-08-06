@@ -2,7 +2,6 @@
   "additionalDescription": "Recordings coming from two hives.",
   "annotationsType": "Presence or absence of queen bee",
   "captureDevice": "MEMS-type microphones placed inside the hive",
-  "citeAs": null,
   "continent": "Not specified",
   "countryCode": "Not specified",
   "creators": [
@@ -32,7 +31,6 @@
   "recordingType": "Clips",
   "sampleRate": 32.0,
   "sizeInGb": 21.3,
-  "species": "Apis mellifera",
   "taxonomicClass": "Insect",
   "totalDuration": 96,
   "url": "https://zenodo.org/records/2667806",

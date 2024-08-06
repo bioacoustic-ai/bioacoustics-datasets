@@ -2,7 +2,6 @@
   "additionalDescription": "Undirected song (no female present). Includes song and non-songs audio files. The song presents very little variation (the zebra finch only has one song in his repertoire)",
   "annotationsType": "Individuals, time point of song",
   "captureDevice": "Audio-Technica AT803",
-  "citeAs": null,
   "continent": "",
   "countryCode": "",
   "creators": [
@@ -28,7 +27,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 3.5,
-  "species": "",
   "taxonomicClass": "Birds",
   "totalDuration": "",
   "url": "https://osf.io/bx76r/",

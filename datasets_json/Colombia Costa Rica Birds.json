@@ -2,7 +2,6 @@
   "additionalDescription": "A subset was used for the test set of BirdClef 2021. Part of the BIRB benchmark",
   "annotationsType": "Species with onset/offset detection time, and frequencies",
   "captureDevice": "SWIFT recorders, positioned 3m above the ground",
-  "citeAs": null,
   "continent": "North America",
   "countryCode": "CR",
   "creators": [
@@ -34,7 +33,6 @@
   "recordingType": "Continuous",
   "sampleRate": "",
   "sizeInGb": 3.8,
-  "species": "",
   "taxonomicClass": "Birds",
   "totalDuration": 34,
   "url": "https://zenodo.org/records/7525349",

@@ -2,7 +2,6 @@
   "additionalDescription": "Part of the BirdClef 2020 challenge, and the Kaggle Birdcall Identification competition. Part of the BIRB benchmark",
   "annotationsType": "Species with onset/offset detection time, and frequencies",
   "captureDevice": "Song Meter SM2+ units",
-  "citeAs": null,
   "continent": "North America",
   "countryCode": "US-CA",
   "creators": [
@@ -32,7 +31,6 @@
   "recordingType": "Continuous",
   "sampleRate": "",
   "sizeInGb": 1.4,
-  "species": "",
   "taxonomicClass": "Birds",
   "totalDuration": 16.67,
   "url": "https://zenodo.org/records/7525805",

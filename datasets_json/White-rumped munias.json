@@ -2,7 +2,6 @@
   "additionalDescription": "Undirected songs of 44 adult males. Distance of 20cm between the microphone and the cage during recording. Recordings quite long (like 5 minutes or more), where the bird doesn't always sing.",
   "annotationsType": "Individual",
   "captureDevice": "Directed microphones MS957, Sony and AT3031, and a digital recorder",
-  "citeAs": null,
   "continent": "Asia",
   "countryCode": "CN",
   "creators": [
@@ -30,7 +29,6 @@
   "recordingType": "Clips",
   "sampleRate": 22.05,
   "sizeInGb": 1.2,
-  "species": "Lonchura striata",
   "taxonomicClass": "Bird",
   "totalDuration": 4.5,
   "url": "https://zenodo.org/records/5022578",

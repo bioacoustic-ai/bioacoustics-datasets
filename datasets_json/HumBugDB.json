@@ -2,7 +2,6 @@
   "additionalDescription": "20 hours of labelled mosquito data, and 15 hours of background noise. Part of the BEANS benchmark",
   "annotationsType": "Species",
   "captureDevice": "various",
-  "citeAs": null,
   "continent": "Global",
   "countryCode": "",
   "creators": [
@@ -41,7 +40,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 4.1,
-  "species": "",
   "taxonomicClass": "Insects (Mosquitoes)",
   "totalDuration": 35,
   "url": "https://zenodo.org/records/4904800",

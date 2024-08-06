@@ -2,7 +2,6 @@
   "additionalDescription": "The clips comes from the Birdvox full-night dataset.",
   "annotationsType": "Presence or absence of bird vocalisation",
   "captureDevice": "ROBIN autonomous recording units",
-  "citeAs": null,
   "continent": "North America",
   "countryCode": "US-NY",
   "creators": [
@@ -31,7 +30,6 @@
   "recordingType": "Clips",
   "sampleRate": 24.0,
   "sizeInGb": 17.6,
-  "species": "Not specified",
   "taxonomicClass": "Bird",
   "totalDuration": 55.5,
   "url": "https://zenodo.org/records/1208080",

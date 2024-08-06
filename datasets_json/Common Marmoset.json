@@ -2,7 +2,6 @@
   "additionalDescription": "Recorded made on 10 pairs of adult marmosets. The pairs were not recorded in isolation",
   "annotationsType": "Call type, individual, sex, condition (pair together, or one of the animals is outside the cage)",
   "captureDevice": "Panictech and Polend digital voice recorders, with omnidirectional microphones",
-  "citeAs": null,
   "continent": "",
   "countryCode": "",
   "creators": [
@@ -27,7 +26,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 5,
-  "species": "",
   "taxonomicClass": "Primates",
   "totalDuration": "",
   "url": "https://osf.io/pswqd/",

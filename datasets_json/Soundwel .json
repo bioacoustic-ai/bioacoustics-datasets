@@ -2,7 +2,6 @@
   "additionalDescription": "",
   "annotationsType": "Vocalisation type, emotional valence (pos or neg), vocalisation context, sex",
   "captureDevice": "",
-  "citeAs": null,
   "continent": "",
   "countryCode": "",
   "creators": [
@@ -41,7 +40,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 327,
-  "species": "Sus domesticus",
   "taxonomicClass": "Mammalia",
   "totalDuration": "",
   "url": "https://zenodo.org/records/8252482",

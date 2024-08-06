@@ -2,7 +2,6 @@
   "additionalDescription": "Sounds downloaded from Xeno-Canto (they include the recording id in the paper). The number of audio files and the total duration exclude the unknown class",
   "annotationsType": "Species",
   "captureDevice": "Various",
-  "citeAs": null,
   "continent": "North America",
   "countryCode": "",
   "creators": [
@@ -27,7 +26,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 0.037,
-  "species": "",
   "taxonomicClass": "Birds",
   "totalDuration": 0.1666666667,
   "url": "https://zenodo.org/records/1250690",

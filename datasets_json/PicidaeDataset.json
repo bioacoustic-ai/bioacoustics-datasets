@@ -2,7 +2,6 @@
   "additionalDescription": "Recordings taken from 161 recordings uploaded to Xeno-Canto",
   "annotationsType": "Species and call type",
   "captureDevice": "Various",
-  "citeAs": null,
   "continent": "Europe",
   "countryCode": "",
   "creators": [
@@ -29,7 +28,6 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 0.324,
-  "species": "",
   "taxonomicClass": "Picidae",
   "totalDuration": 1.4,
   "url": "https://zenodo.org/records/574438",

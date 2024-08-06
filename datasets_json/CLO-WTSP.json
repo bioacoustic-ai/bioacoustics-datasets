@@ -2,7 +2,6 @@
   "additionalDescription": "Focuses on one species only, the white throated sparrow. Is interested in migratory species. Note that the data from this dataset and the CLO-SWTH datasets come from the same sensors (each sensor has two detectors, one for the SWTH, and one for the WTSP)",
   "annotationsType": "- Flight call from target species\n- Flight call from non-target species\n- No flight call",
   "captureDevice": "ROBIN autonomous recording units",
-  "citeAs": null,
   "continent": "North America",
   "countryCode": "US-NY",
   "creators": [
@@ -33,7 +32,6 @@
   "recordingType": "Clips",
   "sampleRate": 22.05,
   "sizeInGb": 1.43,
-  "species": "Zonotrichia albicollis, Not Specified",
   "taxonomicClass": "Birds",
   "totalDuration": 5.616666667,
   "url": "http://datadryad.org/stash/dataset/doi:10.5061/dryad.j2t92",
