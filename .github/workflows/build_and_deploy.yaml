@@ -37,7 +37,7 @@ jobs:
           destination: ./_site
 
       - name: Upload artifact  # Uploads the build artifact.
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
     
   deploy:
     name: Deploy Application  # Defines the name of the deployment job.
