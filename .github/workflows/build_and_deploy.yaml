@@ -21,7 +21,7 @@ jobs:
         with: 
           node-version: 22.5.1
       
-      - name: Install Packages and Build Application  # Installs npm packages and builds the Vue.js application. TODO: try to make npm ci work?
+      - name: Install Packages and Build Application  # Installs npm packages and builds the Vue.js application.
         run: |
           npm ci
           npm run build
