@@ -16,10 +16,6 @@ jobs:
       - name: Checkout Repo  # Checks out the repository.
         uses: actions/checkout@v4
 
-      - name: Go to front-end folder
-        run: |
-          ls
-      
       - name: Create Node Environment  # Sets up Node.js environment.
         uses: actions/setup-node@v4
         with: 
@@ -27,7 +23,7 @@ jobs:
       
       - name: Install Packages and Build Application  # Installs npm packages and builds the Vue.js application. TODO: try to make npm ci work?
         run: |
-          npm install
+          npm ci
           npm run build
 
       - name: Setup Pages  # Configures pages for deployment.
