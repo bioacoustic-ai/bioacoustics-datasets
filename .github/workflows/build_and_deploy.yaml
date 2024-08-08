@@ -1,4 +1,4 @@
-name: Deploy to Github Pages  # Defines the name of the GitHub Actions workflow.
+name: Deploy to Github Pages
 
 on:
   push:
