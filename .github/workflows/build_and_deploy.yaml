@@ -7,16 +7,19 @@ jobs:
   build:
     name: Build  # Defines the name of the build job.
     runs-on: ubuntu-latest  # Specifies the operating system for the job.
-    working-directory: frontend
+    defaults:
+      run:
+        working-directory: frontend # The working directory path
+
 
     steps:
       - name: Checkout Repo  # Checks out the repository.
         uses: actions/checkout@v4
 
-      - name: Go to front-end folder
-        run: |
-          cd frontend/
-          ls
+      # - name: Go to front-end folder
+      #   run: |
+      #     cd frontend/
+      #     ls
       
       - name: Create Node Environment  # Sets up Node.js environment.
         uses: actions/setup-node@v4
