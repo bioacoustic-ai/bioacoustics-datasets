@@ -1,9 +1,8 @@
 # Bioacoustics datasets
 
-Note: the webapp is not published yet, and will be very soon!
 
 ## Introduction
-This repository gathers the list of online publicly available bioacoustics datasets that can be used together with deep learning. You can visualise this table at the following url: *Coming Soon*. This list aims at providing an overview of what data is currently accessible to train and evaluate models. We aim at keeping this list up-to-date, and you can contribute by opening a pull request to add new datasets. The procedure to add a new dataset is explained in the next section.
+This repository gathers the list of online publicly available bioacoustics datasets that can be used together with deep learning. You can visualise this table at the following url: https://bioacoustic-ai.github.io/bioacoustics-datasets/. This list aims at providing an overview of what data is currently accessible to train and evaluate models. We aim at keeping this list up-to-date, and you can contribute by opening a pull request to add new datasets. The procedure to add a new dataset is explained in the next section.
 
 ## Want to contribute?
 That's great! You can contribute in two ways. The first way to contribute is to add more information on the already listed datasets, or add another dataset. In order to modify the existing datasets, you only need to modify its json file, located in the directory `datasets_json`. To add a new dataset, download the file called `dataset_template.json`. Then, open it and fill as many fields as possible. We recommend to fill at least the fields `authors`, `description`, `url`, `version`, and `license`. You will find a description of each of the fields below. You can also open a github issue to refer us to a new dataset if you do not wish to fill the information yourself.
