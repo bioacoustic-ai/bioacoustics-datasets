@@ -33,7 +33,7 @@ jobs:
       - name: Build with Jekyll  # Builds the application with Jekyll.
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./dist/
+          source: ./frontend/dist/
           destination: ./_site
 
       - name: Upload artifact  # Uploads the build artifact.
