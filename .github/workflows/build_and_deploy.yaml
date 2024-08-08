@@ -34,7 +34,7 @@ jobs:
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./frontend/dist/
-          destination: ../_site
+          destination: ./_site
 
       - name: Upload artifact  # Uploads the build artifact.
         uses: actions/upload-pages-artifact@v3
@@ -58,4 +58,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages  # Deploys the application to GitHub Pages.
         id: deployment
-        uses: actions/deploy-pages@v2  # Specifies the version of the deployment action.
+        uses: actions/deploy-pages@v4  # Specifies the version of the deployment action.
