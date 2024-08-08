@@ -18,7 +18,6 @@ jobs:
 
       - name: Go to front-end folder
         run: |
-          cd frontend/
           ls
       
       - name: Create Node Environment  # Sets up Node.js environment.
