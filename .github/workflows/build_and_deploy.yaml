@@ -28,7 +28,7 @@ jobs:
 
       - name: Setup Pages  # Configures pages for deployment.
         id: pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v5
 
       - name: Build with Jekyll  # Builds the application with Jekyll.
         uses: actions/jekyll-build-pages@v1
@@ -37,7 +37,7 @@ jobs:
           destination: ./_site
 
       - name: Upload artifact  # Uploads the build artifact.
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
     
   deploy:
     name: Deploy Application  # Defines the name of the deployment job.
