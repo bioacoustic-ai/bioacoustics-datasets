@@ -16,10 +16,10 @@ jobs:
       - name: Checkout Repo  # Checks out the repository.
         uses: actions/checkout@v4
 
-      # - name: Go to front-end folder
-      #   run: |
-      #     cd frontend/
-      #     ls
+      - name: Go to front-end folder
+        run: |
+          cd frontend/
+          ls
       
       - name: Create Node Environment  # Sets up Node.js environment.
         uses: actions/setup-node@v4
