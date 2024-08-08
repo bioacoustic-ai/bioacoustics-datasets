@@ -2,6 +2,9 @@ name: Deploy to Github Pages
 
 on:
   push:
+    branches: ['main']
+  pull_request:
+    branches: ['main']
 
 jobs:
   build:
@@ -10,7 +13,6 @@ jobs:
     defaults:
       run:
         working-directory: frontend # The working directory path
-
 
     steps:
       - name: Checkout Repo  # Checks out the repository.
@@ -30,21 +32,14 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
-      # - name: Build with Jekyll  # Builds the application with Jekyll.
-      #   uses: actions/jekyll-build-pages@v1
-      #   with:
-      #     source: ./frontend/dist/
-      #     destination: ./_site
-
       - name: Upload artifact  # Uploads the build artifact.
         uses: actions/upload-pages-artifact@v3
         with:
           path: './frontend/dist'
   deploy:
-    name: Deploy Application  # Defines the name of the deployment job.
-
-    # Add a dependency to the build job
-    needs: build  # Specifies that the deployment job depends on the successful completion of the build job.
+    name: Deploy Application
+    needs: build
+    if: github.ref == 'refs/heads/master'
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
