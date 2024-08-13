@@ -40,7 +40,7 @@ function formatDate(entry: DataEntryType, key: string) {
     if (!value) {
         return "";
     }
-    return moment(String(value)).format('MM/DD/YYYY')
+    return moment(String(value)).format('YYYY-MM-DD')
 }
 
 // The point of this function is to return a standardized link.
