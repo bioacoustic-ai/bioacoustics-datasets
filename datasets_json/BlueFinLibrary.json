@@ -23,7 +23,7 @@
   "recordingPeriod": "From 2005 to 2017",
   "recordingType": "Continuous",
   "sampleRate": "",
-  "sizeInGb": "> 5 ",
+  "sizeInGb": 5,
   "taxonomicClass": "Marine Mammals",
   "totalDuration": 1880.25,
   "url": "https://data.aad.gov.au/metadata/records/AcousticTrends_BlueFinLibrary",
