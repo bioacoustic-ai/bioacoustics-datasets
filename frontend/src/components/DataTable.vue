@@ -26,7 +26,10 @@ var sortBy = ref({
     sortDirection: SortDirection.Ascending
 });
 
-function openModal(entry: DataEntryType) {
+function openModal(entry: DataEntryType, $event: MouseEvent) {
+    if ($event.target instanceof Element && $event.target.tagName.toLowerCase() === "a") {
+        return;
+    } 
     currentData.value = entry;
     modalRef.value.showModal();
 }
@@ -109,7 +112,7 @@ function sorted(prop: DataEntryKey, ascending: SortDirection) {
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="entry in dataEntries" v-on:click="openModal(entry)"
+                <tr v-for="entry in dataEntries" v-on:click="openModal(entry, $event)"
                     class="bg-white border-b hover:bg-gray-100 cursor-pointer">
                     <th v-for="key in visibleKeys" scope="row"
                         class="px-6 py-4 font-medium max-w-6 text-gray-900 whitespace-nowrap">
