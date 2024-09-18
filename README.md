@@ -4,6 +4,14 @@
 ## Introduction
 This repository gathers the list of online publicly available bioacoustics datasets that can be used together with deep learning. Note that I am not listing online repositories like Xeno-Canto where the data needs to be assembled into a dataset, I am interested in datasets that can directly be used to train models. You can visualise this table at the following url: https://bioacoustic-ai.github.io/bioacoustics-datasets/. This list aims at providing an overview of what data is currently accessible to train and evaluate models. Note that this work is **in progress**, and missing information will be progressively added. We aim at keeping this list up-to-date, and you can contribute by opening a pull request to add new datasets. The procedure to add a new dataset is explained in the next section.
 
+## Other resources
+I partly based this compilation on other lists of datasets that include:
+- The list of Justin Salamon on this [website](https://bioacousticsdatasets.weebly.com/)
+- The datasets listed on the [LILA](https://lila.science/otherdatasets#bioacoustics) website
+- The datasets gathered by Tessa Rhinehart in [this google sheet](https://docs.google.com/spreadsheets/d/1KrmCB0vvSK7V3znJfycO-eOMZJKP2F-Ih6neRYPz1Xc/edit?gid=0#gid=0)  
+- The S1 Table from the paper [Finding, visualizing, and quantifying latent structure across diverse animal vocal repertoires](https://doi.org/10.1371/journal.pcbi.1008228.s007))
+- The Appendix 1 of the paper [The potential for acoustic individual identification in mammals](https://link.springer.com/article/10.1007/s42991-021-00222-2#appendices)
+
 ## Want to contribute?
 That's great! You can contribute in two ways. The first way to contribute is to add more information on the already listed datasets, or add another dataset. In order to modify the existing datasets, you only need to modify its json file, located in the directory `datasets_json`. To add a new dataset, download the file called `dataset_template.json`. Then, open it and fill as many fields as possible. Finally, place it in the folder `datasets_json` and open a pull request. We recommend to fill at least the fields `authors`, `description`, `url`, `version`, and `license`. You will find a description of each of the fields below. You can also open a github issue to refer us to a new dataset if you do not wish to fill the information yourself.
 
