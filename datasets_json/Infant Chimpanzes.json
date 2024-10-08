@@ -30,7 +30,7 @@
   "sampleRate": "",
   "sizeInGb": 17,
   "taxonomicClass": "Chimpanzes (Gombe Chimpanzes)",
-  "totalDuration": "a few hours",
+  "totalDuration": 10,
   "url": "http://datadryad.org/stash/dataset/doi:10.5061/dryad.5tq80",
   "version": 2
 }
