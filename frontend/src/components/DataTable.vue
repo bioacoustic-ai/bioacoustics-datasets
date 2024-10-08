@@ -93,7 +93,7 @@ function sorted(prop: DataEntryKey, ascending: SortDirection) {
     <div class="data-table overflow-hidden">
         <DataModal ref="modalRef" v-bind:data="currentData"></DataModal>
         <table class="w-full text-sm text-left">
-            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+            <thead class="text-xs text-gray-700 dark:text-gray-1000 uppercase bg-gray-50 dark:bg-slate-300">
                 <tr>
                     <th @click="updateSort(key)" v-for="key in visibleKeys" scope="col"
                         class="px-6 py-3 max-w-6 overflow-x-auto text-ellipsis select-none cursor-pointer">
@@ -113,7 +113,7 @@ function sorted(prop: DataEntryKey, ascending: SortDirection) {
             </thead>
             <tbody>
                 <tr v-for="entry in dataEntries" v-on:click="openModal(entry, $event)"
-                    class="border-b hover:bg-gray-100 cursor-pointer">
+                    class="border-b dark:hover:bg-gray-700 hover:bg-gray-100 cursor-pointer">
                     <th v-for="key in visibleKeys" scope="row"
                         class="px-6 py-4 font-medium max-w-6 whitespace-nowrap">
                         <div class="truncate" v-html="getData(entry, key)"></div>
