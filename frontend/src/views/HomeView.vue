@@ -10,8 +10,8 @@ import DataTable from "../components/DataTable.vue";
     <div class="text-center mb-4">
         <h1 class="about text-center mb-4 mt-4 text-4xl font-extrabold">Datasets for bioacoustics</h1>
         <p>This table presents publicly available bioacoustic datasets that can be used with machine learning.</p>
-        <p><b>Want to add a dataset?</b> Follow the instructions of this <a target="_blank" class="underline text-blue-800" href="https://github.com/Cangonin/bioacoustics-datasets">README file.</a></p>
-        <p><b>Want to contribute to make this list better?</b> Open a pull request on <a target="_blank" class="underline text-blue-800" href="https://github.com/Cangonin/bioacoustics-datasets">this github repo!</a> 
+        <p><b>Want to add a dataset?</b> Follow the instructions of this <a target="_blank" class="underline text-blue-800 dark:text-blue-400" href="https://github.com/Cangonin/bioacoustics-datasets">README file.</a></p>
+        <p><b>Want to contribute to make this list better?</b> Open a pull request on <a target="_blank" class="underline text-blue-800 dark:text-blue-400" href="https://github.com/Cangonin/bioacoustics-datasets">this github repo!</a> 
         </p>
     </div>
     <DataTable></DataTable>

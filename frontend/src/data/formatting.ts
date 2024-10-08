@@ -47,7 +47,7 @@ function formatDate(entry: DataEntryType, key: string) {
 // The thing was that there were more than one entry that needed a link, and so 
 // it was not that nice to have multiple link templates essentially doing the same thing.
 function createLink(href: string | undefined, text: string | undefined) {
-    return `<a target="_blank" class="underline text-blue-800" href="${href}">${text}</a>`;
+    return `<a target="_blank" class="underline text-blue-800 dark:text-blue-200" href="${href}">${text}</a>`;
 }
 
 
