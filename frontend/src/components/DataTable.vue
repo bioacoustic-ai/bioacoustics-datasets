@@ -83,7 +83,7 @@ function sorted(prop: DataEntryKey, ascending: SortDirection) {
                     type="checkbox" v-bind:value="key" v-bind:name="key"
                     class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 cursor-pointer">
                 <label v-bind:for="key"
-                    class="w-full h-auto py-4 ms-2 text-xs font-medium text-gray-900 overflow-hidden text-ellipsis cursor-pointer">
+                    class="w-full h-auto py-4 ms-2 text-xs font-medium overflow-hidden text-ellipsis cursor-pointer">
                     {{ nameLookup[key] }}
                 </label>
             </div>
@@ -92,15 +92,15 @@ function sorted(prop: DataEntryKey, ascending: SortDirection) {
 
     <div class="data-table overflow-hidden">
         <DataModal ref="modalRef" v-bind:data="currentData"></DataModal>
-        <table class="w-full text-sm text-left text-gray-500">
-            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+        <table class="w-full text-sm text-left">
+            <thead class="text-xs text-gray-700 dark:text-gray-1000 uppercase bg-gray-50 dark:bg-slate-300">
                 <tr>
                     <th @click="updateSort(key)" v-for="key in visibleKeys" scope="col"
                         class="px-6 py-3 max-w-6 overflow-x-auto text-ellipsis select-none cursor-pointer">
                         {{ nameLookup[key] }}
                         <span>
                             <svg v-if="key === sortBy.key"
-                                class="w-2 h-2 mb-1 inline-block text-gray-800 dark:text-white" aria-hidden="true"
+                                class="w-2 h-2 mb-1 inline-block" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
                                 <path v-if="sortBy.sortDirection === 0" stroke="currentColor" stroke-linecap="round"
                                     stroke-linejoin="round" stroke-width="2" d="M5 13V1m0 0L1 5m4-4 4 4"></path>
@@ -113,9 +113,9 @@ function sorted(prop: DataEntryKey, ascending: SortDirection) {
             </thead>
             <tbody>
                 <tr v-for="entry in dataEntries" v-on:click="openModal(entry, $event)"
-                    class="bg-white border-b hover:bg-gray-100 cursor-pointer">
+                    class="border-b dark:hover:bg-gray-700 hover:bg-gray-100 cursor-pointer">
                     <th v-for="key in visibleKeys" scope="row"
-                        class="px-6 py-4 font-medium max-w-6 text-gray-900 whitespace-nowrap">
+                        class="px-6 py-4 font-medium max-w-6 whitespace-nowrap">
                         <div class="truncate" v-html="getData(entry, key)"></div>
                     </th>
                 </tr>
