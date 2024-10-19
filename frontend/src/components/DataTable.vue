@@ -78,7 +78,7 @@ function sorted(prop: DataEntryKey, ascending: SortDirection) {
     <div class="max-h-32 overflow-y-scroll mb-5">
         <div class="flex flex-wrap place-content-center">
             <div v-for="key in nameKeys.filter(x => !hiddenKeys.includes(x))"
-                class="flex items-center p-4 border border-gray-200 rounded xs:w-1/4 sm:w-1/5 lg:w-1/6 xl:w-1/6 m-1 h-6 cursor-pointer">
+                class="flex items-center p-4 border border-gray-200 rounded xs:w-1/4 sm:w-1/5 lg:w-1/6 xl:w-1/6 m-1 h-6 cursor-pointer dark:hover:bg-gray-700 hover:bg-gray-50 hover:transition-all delay-0 duration-50">
                 <input v-bind:id="key" v-bind:checked="visibleKeys.includes(key)" @change="updateChecked(key)"
                     type="checkbox" v-bind:value="key" v-bind:name="key"
                     class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 cursor-pointer">
@@ -90,10 +90,10 @@ function sorted(prop: DataEntryKey, ascending: SortDirection) {
         </div>
     </div>
 
-    <div class="data-table overflow-hidden">
+    <div class="data-table overflow-hidden shadow-md rounded-lg">
         <DataModal ref="modalRef" v-bind:data="currentData"></DataModal>
         <table class="w-full text-sm text-left">
-            <thead class="text-xs text-gray-700 dark:text-gray-1000 uppercase bg-gray-50 dark:bg-slate-300">
+            <thead class="text-xs text-gray-700 dark:text-gray-1000 uppercase bg-gray-100 dark:bg-slate-300">
                 <tr>
                     <th @click="updateSort(key)" v-for="key in visibleKeys" scope="col"
                         class="px-6 py-3 max-w-6 overflow-x-auto text-ellipsis select-none cursor-pointer">
@@ -113,7 +113,7 @@ function sorted(prop: DataEntryKey, ascending: SortDirection) {
             </thead>
             <tbody>
                 <tr v-for="entry in dataEntries" v-on:click="openModal(entry, $event)"
-                    class="border-b dark:hover:bg-gray-700 hover:bg-gray-100 cursor-pointer">
+                    class="hover:transition-all border-b dark:hover:bg-gray-700 hover:bg-gray-50 delay-0 duration-50 cursor-pointer">
                     <th v-for="key in visibleKeys" scope="row"
                         class="px-6 py-4 font-medium max-w-6 whitespace-nowrap">
                         <div class="truncate" v-html="getData(entry, key)"></div>
