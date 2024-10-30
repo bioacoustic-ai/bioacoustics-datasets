@@ -30,7 +30,7 @@
   "recordingType": "Continuous",
   "sampleRate": 24.0,
   "sizeInGb": 5.7,
-  "taxonomicClass": "Bird",
+  "taxonomicClass": "Birds",
   "totalDuration": 62,
   "url": "https://zenodo.org/records/1205569",
   "version": 3
