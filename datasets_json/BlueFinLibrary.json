@@ -6,7 +6,7 @@
   "countryCode": "AQ",
   "creators": null,
   "datePublished": null,
-  "description": null,
+  "description": "This annotated library contains both a data set and a data product. The data set contains a sub-sample of underwater recordings made around Antarctica from 2005-2017. These recordings were curated and sub-sampled from a variety of national and academic recording campaigns. Recordings were made using a variety of different instruments, and sub-samples span 11 different combinations of site and year. Spatial coverage of the recordings includes sites in the Western Antarctic Peninsula, Atlantic, Indian, and Pacific sectors. Temporal coverage of recordings covers a representative sample throughout each recording year for the years of 2005, 2013, 2014, 2015, and 2017. The focus is on low-frequency sounds of blue and fin whales, so curated recordings have been downsampled to sample rates of either 250, 500, 1000 or 2000 Hz. Recordings are all in 16-bit wav format. The file name of each wav file contains a timestamp with the date and time of the start of that file. Recordings are contained in the /wav/ subfolder for each site-year (e.g. Casey2014/wav). The data product is in the form of annotations that describe the times within each WAV file that contain detections of blue and fin whale sounds. Each annotations are stored as a row in a tab-separated text file (with descriptive column headers), and each text file describes a particular type of sound. These annotation text files are formatted as Selection Tables that can be directly imported into the software program Raven Pro 1.5 (Cornell Bioacoustics Laboratory). Full description of the details of the creation and use of this dataset are described in the draft manuscript contained in the documentation folder.",
   "labellingLevel": "Strong",
   "license": "CC BY 4.0",
   "lifeStage": "",
@@ -24,7 +24,7 @@
   "recordingType": "Continuous",
   "sampleRate": "",
   "sizeInGb": 5,
-  "taxonomicClass": "Marine Mammals",
+  "taxonomicClass": "Marine Mammals (Blue and fin whales)",
   "totalDuration": 1880.25,
   "url": "https://data.aad.gov.au/metadata/records/AcousticTrends_BlueFinLibrary",
   "version": null

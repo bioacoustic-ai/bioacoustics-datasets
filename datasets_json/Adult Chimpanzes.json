@@ -29,8 +29,8 @@
   "recordingType": "Clips",
   "sampleRate": "",
   "sizeInGb": 3.9,
-  "taxonomicClass": "Chimpanzes (Gombe Chimpanzes)",
-  "totalDuration": "A few hours",
+  "taxonomicClass": "Primates (Gombe Chimpanzes)",
+  "totalDuration": 10,
   "url": "https://zenodo.org/records/4979944",
   "version": 1
 }
