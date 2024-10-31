@@ -30,6 +30,7 @@
   "sampleRate": "",
   "sizeInGb": 1,
   "taxonomicClass": "Birds",
+  "title": "Datasets for automatic acoustic identification of individual birds",
   "totalDuration": 2.3,
   "url": "https://zenodo.org/records/1413495",
   "version": 1

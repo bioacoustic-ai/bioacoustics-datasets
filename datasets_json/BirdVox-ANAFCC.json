@@ -32,6 +32,7 @@
   "sampleRate": "",
   "sizeInGb": 5.8,
   "taxonomicClass": "Birds",
+  "title": "BirdVox-ANAFCC: A dataset for American Northeast Avian Flight Call Classification",
   "totalDuration": "",
   "url": "https://zenodo.org/records/5950000",
   "version": 2

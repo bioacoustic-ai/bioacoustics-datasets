@@ -41,6 +41,7 @@
   "sampleRate": "",
   "sizeInGb": 4.1,
   "taxonomicClass": "Insects (Mosquitoes)",
+  "title": "HumBugDB: a large-scale acoustic mosquito dataset",
   "totalDuration": 35,
   "url": "https://zenodo.org/records/4904800",
   "version": 1

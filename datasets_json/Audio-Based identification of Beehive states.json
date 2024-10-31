@@ -32,6 +32,7 @@
   "sampleRate": 32.0,
   "sizeInGb": 21.3,
   "taxonomicClass": "Insects",
+  "title": "Audio-Based identification of Beehive states: The dataset",
   "totalDuration": 96,
   "url": "https://zenodo.org/records/2667806",
   "version": 2

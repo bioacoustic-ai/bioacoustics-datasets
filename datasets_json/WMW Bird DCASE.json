@@ -42,6 +42,7 @@
   "sampleRate": "",
   "sizeInGb": "",
   "taxonomicClass": "Birds",
+  "title": "DCASE 2024 Task 5: Few-shot Bioacoustic Event Detection Development Set",
   "totalDuration": 4.6,
   "url": "https://zenodo.org/records/10829604",
   "version": 1

@@ -6,7 +6,7 @@
   "countryCode": "",
   "creators": [
     "Ben Williams",
-    "Bart van Merriënboer",
+    "Bart van Merri\u00ebnboer",
     "Vincent Dumoulin",
     "Jenny Hamer",
     "Abram B. Fleishman",
@@ -40,7 +40,8 @@
   "sampleRate": "16.0",
   "sizeInGb": "",
   "taxonomicClass": "Mixed",
+  "title": "Leveraging tropical reef, bird and unrelated sounds for superior transfer learning in marine bioacoustics",
   "totalDuration": 29.82,
-  "url": "https://doi.org/10.5281/zenodo.11071202",
+  "url": "https://zenodo.org/records/11071202",
   "version": "1.0"
 }

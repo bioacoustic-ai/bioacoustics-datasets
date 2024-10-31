@@ -27,6 +27,7 @@ interface DataEntry {
     sizeInGb: number;
     species: string;
     taxonomicClass: string;
+    title: string,
     totalDuration: number;
     url: string;
     version: number;

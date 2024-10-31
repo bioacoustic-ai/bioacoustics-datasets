@@ -33,6 +33,7 @@
   "sampleRate": 22.05,
   "sizeInGb": 0.031,
   "taxonomicClass": "Birds",
+  "title": "Data from: Towards the automatic classification of avian flight calls for bioacoustic monitoring",
   "totalDuration": 0.2166666667,
   "url": "http://datadryad.org/stash/dataset/doi:10.5061/dryad.j2t92",
   "version": 1

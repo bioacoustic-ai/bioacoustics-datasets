@@ -31,6 +31,7 @@
   "sampleRate": 24.0,
   "sizeInGb": 17.6,
   "taxonomicClass": "Birds",
+  "title": "BirdVox-DCASE-20k: a dataset for bird audio detection in 10-second clips",
   "totalDuration": 55.5,
   "url": "https://zenodo.org/records/1208080",
   "version": 2

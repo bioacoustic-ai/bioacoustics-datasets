@@ -29,6 +29,7 @@
   "sampleRate": 44.1,
   "sizeInGb": "",
   "taxonomicClass": "Birds",
+  "title": "NIPS4Bplus: Transcriptions of NIPS4B 2013 Bird Challenge Training Dataset",
   "totalDuration": 1,
   "url": "https://figshare.com/articles/dataset/Transcriptions_of_NIPS4B_2013_Bird_Challenge_Training_Dataset/6798548",
   "version": 7

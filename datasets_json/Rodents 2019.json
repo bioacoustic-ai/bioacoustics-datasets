@@ -27,6 +27,7 @@
   "sampleRate": "",
   "sizeInGb": 1,
   "taxonomicClass": "Mammals (Rodents)",
+  "title": "Dataset for USVSEG performance test",
   "totalDuration": "",
   "url": "https://zenodo.org/records/3428024",
   "version": 1

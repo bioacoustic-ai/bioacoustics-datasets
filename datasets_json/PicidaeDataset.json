@@ -29,6 +29,7 @@
   "sampleRate": "",
   "sizeInGb": 0.324,
   "taxonomicClass": "Birds (Picidae)",
+  "title": "An Annotated and Segmented Acoustic Dataset of 7 Picidae Species",
   "totalDuration": 1.4,
   "url": "https://zenodo.org/records/574438",
   "version": 1
