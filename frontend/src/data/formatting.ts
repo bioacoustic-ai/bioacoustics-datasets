@@ -30,6 +30,7 @@ var nameLookup: { [key: string]: string } = {
     "sampleRate": "Sample Rate in kHz",
     "sizeInGb": "Size In Gb",
     "taxonomicClass": "Taxonomic Class",
+    "title": "Title",
     "totalDuration": "Tot. Duration in Hours",
     "url": "Url",
     "version": "Version"

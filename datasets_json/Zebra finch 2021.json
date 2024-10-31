@@ -6,7 +6,7 @@
   "countryCode": "US-NY",
   "creators": null,
   "datePublished": null,
-  "description": null,
+  "description": "The library currently includes recordings from 280 birds, including 160 tutor-pupil pairs. Each bird was placed singly in a sound attenuation chamber, and its vocal activity was recorded continuously over one week using Sound Analysis Pro. In addition to recording undirected songs, most birds were also recorded singing female directed and male directed songs.",
   "labellingLevel": "",
   "license": "CC BY 4.0",
   "lifeStage": "",
@@ -25,7 +25,7 @@
   "sampleRate": "",
   "sizeInGb": "",
   "taxonomicClass": "Birds",
-  "title": "",
+  "title": "The Rockefeller University Field Research Center Song Library",
   "totalDuration": "",
   "url": "http://ofer.sci.ccny.cuny.edu/songs",
   "version": null

@@ -32,7 +32,7 @@
   "sampleRate": "",
   "sizeInGb": "",
   "taxonomicClass": "Birds",
-  "title": "",
+  "title": "BIRDeep Audio Annotations",
   "totalDuration": "8.7",
   "url": "https://huggingface.co/datasets/GrunCrow/BIRDeep_AudioAnnotations",
   "version": "1.0"

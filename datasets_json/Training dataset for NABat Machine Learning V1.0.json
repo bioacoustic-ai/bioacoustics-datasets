@@ -12,7 +12,7 @@
   "lifeStage": "",
   "locality": "",
   "minAndMaxRecordingDuration": "",
-  "name": "Training dataset for NABat Machine Learning V1.0",
+  "name": "NABat Machine Learning",
   "numAnnotations": "",
   "numAudioFiles": "",
   "numClasses": 31,
@@ -25,7 +25,7 @@
   "sampleRate": "",
   "sizeInGb": "",
   "taxonomicClass": "Bats",
-  "title": "",
+  "title": "Training dataset for NABat Machine Learning V1.0",
   "totalDuration": "",
   "url": "https://www.sciencebase.gov/catalog/item/627ed4b2d34e3bef0c9a2f30",
   "version": null

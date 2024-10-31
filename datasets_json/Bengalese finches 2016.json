@@ -27,7 +27,7 @@
   "sampleRate": 32.0,
   "sizeInGb": 1.39,
   "taxonomicClass": "Birds",
-  "title": null,
+  "title": "BirdsongRecognition",
   "totalDuration": 9.8,
   "url": "https://figshare.com/articles/media/BirdsongRecognition/3470165",
   "version": 1
