@@ -27,6 +27,7 @@
   "sampleRate": "",
   "sizeInGb": "",
   "taxonomicClass": "Insects (Orthoptera and Cicadidae)",
+  "title": "InsectSet32: Dataset for automatic acoustic identification of insects (Orthoptera and Cicadidae)",
   "totalDuration": 1,
   "url": "https://zenodo.org/records/7072196",
   "version": 1

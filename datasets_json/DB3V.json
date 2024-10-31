@@ -30,6 +30,7 @@
   "sampleRate": 16.0,
   "sizeInGb": 1.9,
   "taxonomicClass": "Birds",
+  "title": "DB3V: A Dialect Dominated Dataset of Bird Vocalisation for Cross-corpus Bird Species Recognition",
   "totalDuration": 25.48666667,
   "url": "https://zenodo.org/records/11544734",
   "version": 1

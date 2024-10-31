@@ -36,6 +36,7 @@
   "sampleRate": "",
   "sizeInGb": 1.3,
   "taxonomicClass": "Birds",
+  "title": "ArcticBirdSounds: an open-access, multi-year, and detailed annotated dataset of bird songs and calls",
   "totalDuration": 20,
   "url": "https://osf.io/b9trx/",
   "version": null

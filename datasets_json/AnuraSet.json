@@ -45,6 +45,7 @@
   "sampleRate": "",
   "sizeInGb": 18.6,
   "taxonomicClass": "Anuran",
+  "title": "AnuraSet: A dataset for benchmarking neotropical anuran calls identification in passive acoustic monitoring",
   "totalDuration": 27,
   "url": "https://zenodo.org/records/8056090",
   "version": 2

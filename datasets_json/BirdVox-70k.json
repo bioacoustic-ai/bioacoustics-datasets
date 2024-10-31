@@ -31,6 +31,7 @@
   "sampleRate": 24.0,
   "sizeInGb": 6.8,
   "taxonomicClass": "Birds",
+  "title": "BirdVox-70k: a dataset for species-agnostic flight call detection in half-second clips",
   "totalDuration": 3,
   "url": "https://zenodo.org/records/1226427",
   "version": 1

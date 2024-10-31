@@ -5,9 +5,9 @@
   "continent": "Europe, North America, South America, Asia, Oceania, Africa",
   "countryCode": "",
   "creators": [
-    "Samuel Challéat",
+    "Samuel Chall\u00e9at",
     "Nicolas Farrugia",
-    "Jérémy S.P.Froidevaux",
+    "J\u00e9r\u00e9my S.P.Froidevaux",
     "Amandine Gasc",
     "Nicolas Pajusco",
     "Silent Cities project consortium"
@@ -32,6 +32,7 @@
   "sampleRate": "48",
   "sizeInGb": 4900,
   "taxonomicClass": "",
+  "title": "Silent\u00b7Cities",
   "totalDuration": "45145",
   "url": "https://osf.io/h285u/",
   "version": null

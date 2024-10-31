@@ -28,6 +28,7 @@
   "sampleRate": "",
   "sizeInGb": 3.7,
   "taxonomicClass": "Insects",
+  "title": "To bee or not to bee: An annotated dataset for beehive sound recognition",
   "totalDuration": 12,
   "url": "https://zenodo.org/records/1321278",
   "version": 1

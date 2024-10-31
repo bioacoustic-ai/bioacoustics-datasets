@@ -30,6 +30,7 @@
   "sampleRate": "",
   "sizeInGb": 1.3,
   "taxonomicClass": "Birds",
+  "title": "BirdVox-14SD: a dataset of flight calls with species annotation",
   "totalDuration": "",
   "url": "https://zenodo.org/records/3667094",
   "version": 1

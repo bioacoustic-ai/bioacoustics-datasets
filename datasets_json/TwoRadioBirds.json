@@ -27,6 +27,7 @@
   "sampleRate": "",
   "sizeInGb": 11.2,
   "taxonomicClass": "Birds",
+  "title": "Multimodal Birds Song Dataset: TwoRadioBirds",
   "totalDuration": 11,
   "url": "https://zenodo.org/records/7253729",
   "version": 1

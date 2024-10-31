@@ -30,6 +30,7 @@
   "sampleRate": "",
   "sizeInGb": 1.18,
   "taxonomicClass": "Birds",
+  "title": "An annotated set of audio recordings of Eastern North American birds containing frequency, time, and species information",
   "totalDuration": 6.4,
   "url": "http://datadryad.org/stash/dataset/doi:10.5061/dryad.d2547d81z",
   "version": 5
