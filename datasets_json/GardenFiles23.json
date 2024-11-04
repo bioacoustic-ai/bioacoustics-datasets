@@ -25,10 +25,10 @@
   "recordingPeriod": "2023-08-15 to 2024-08-31",
   "recordingType": "Clips",
   "sampleRate": 48000,
-  "sizeInGb": "300",
+  "sizeInGb": 300,
   "taxonomicClass": "",
   "title": "GardenFiles23",
-  "totalDuration": "700",
+  "totalDuration": 700,
   "url": "https://doi.org/10.34894/HPLUCH",
   "version": "1.0"
 }
