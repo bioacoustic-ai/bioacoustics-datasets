@@ -2,7 +2,7 @@
 
 
 ## Introduction
-This repository gathers the list of online publicly available bioacoustics datasets that can be used together with deep learning. Note that I am not listing online repositories like Xeno-Canto where the data needs to be assembled into a dataset, I am interested in datasets that can directly be used to train models. You can visualise this table at the following url: https://bioacoustic-ai.github.io/bioacoustics-datasets/. This list aims at providing an overview of what data is currently accessible to train and evaluate models. Note that this work is **in progress**, and missing information will be progressively added. We aim at keeping this list up-to-date, and you can contribute by opening a pull request to add new datasets. The procedure to add a new dataset is explained in the next section.
+This repository gathers the list of online publicly available bioacoustics datasets that can be used together with deep learning. Note that I am not listing online repositories like Xeno-Canto where the data needs to be assembled into a dataset, I am interested in datasets that can directly be used to train models. You can visualise this table at the following url: https://bioacoustic-ai.github.io/bioacoustics-datasets/. This list aims at providing an overview of what data is currently accessible to train and evaluate models. The current missing information will be progressively added. We aim at keeping this list up-to-date, and you can contribute by opening a pull request to add new datasets. The procedure to add a new dataset is explained in the next section.
 
 ## Other resources
 I partly based this compilation on other lists of datasets that include:
