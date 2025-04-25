@@ -98,16 +98,9 @@ function sorted(prop: DataEntryKey, ascending: SortDirection) {
                     <th @click="updateSort(key)" v-for="key in visibleKeys" scope="col"
                         class="px-6 py-3 max-w-6 overflow-x-auto text-ellipsis select-none cursor-pointer">
                         {{ nameLookup[key] }}
-                        <span>
-                            <svg v-if="key === sortBy.key"
-                                class="w-2 h-2 mb-1 inline-block" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
-                                <path v-if="sortBy.sortDirection === 0" stroke="currentColor" stroke-linecap="round"
-                                    stroke-linejoin="round" stroke-width="2" d="M5 13V1m0 0L1 5m4-4 4 4"></path>
-                                <path v-if="sortBy.sortDirection === 1" stroke="currentColor" stroke-linecap="round"
-                                    stroke-linejoin="round" stroke-width="2" d="M5 1v12m0 0 4-4m-4 4L1 9"></path>
-                            </svg>
-                        </span>
+                        <svg class="w-3 h-2.5 inline-block mb-0.5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z"/>
+                        </svg>
                     </th>
                 </tr>
             </thead>
