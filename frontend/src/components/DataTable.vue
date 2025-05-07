@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import DataModal from "@/components/DataModal.vue";
+import { FwbInput } from 'flowbite-vue';
 import { ref } from "vue";
 import objects, { type DataEntryType } from "../data";
 import { getData, nameLookup } from "../data/formatting";
 type DataEntryKey = keyof DataEntryType;
 
-
 var dataEntries = ref(objects);
+var searchQuery = ref("");
 
 var nameKeys = Object.keys(nameLookup);
 var visibleKeys = ref(["name", "title", "taxonomicClass", "totalDuration", "locality"]);
@@ -71,6 +72,29 @@ function sorted(prop: DataEntryKey, ascending: SortDirection) {
     });
 }
 
+// Returns TRue if the checked data object should be shown, given the current
+// state of the searchQuery. Always returns true if the searchQuery is empty.
+function shouldShowDataEntry(dataObject: DataEntryType) {
+    // Show any object if the search query is empty,
+    // or just check all the fields on the data object to see if
+    // that string contains the query. 
+    if (searchQuery.value == null || searchQuery.value.length == 0) {
+        return true;
+    }
+
+    for (const [key, value] of Object.entries(dataObject)) {
+        // Force convert all objects to strings...
+        // This might have some unintended consequences, but it seems to work!
+        var stringifiedValue = JSON.stringify(value);
+
+        if (stringifiedValue.toLowerCase().indexOf(searchQuery.value.toLocaleLowerCase()) !== -1) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
 
 </script>
 
@@ -88,6 +112,13 @@ function sorted(prop: DataEntryKey, ascending: SortDirection) {
                 </label>
             </div>
         </div>
+    </div>
+
+    <div class="max-h-32 mb-5">
+        <fwb-input
+            v-model="searchQuery"
+            placeholder="Search"
+        />
     </div>
 
     <div class="data-table overflow-hidden">
@@ -112,13 +143,15 @@ function sorted(prop: DataEntryKey, ascending: SortDirection) {
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="entry in dataEntries" v-on:click="openModal(entry, $event)"
-                    class="border-b dark:hover:bg-gray-700 hover:bg-gray-100 cursor-pointer">
-                    <th v-for="key in visibleKeys" scope="row"
-                        class="px-6 py-4 font-medium max-w-6 whitespace-nowrap">
-                        <div class="truncate" v-html="getData(entry, key)"></div>
-                    </th>
-                </tr>
+                <template v-for="entry in dataEntries">
+                    <tr v-if="shouldShowDataEntry(entry)" v-on:click="openModal(entry, $event)"
+                        class="border-b dark:hover:bg-gray-700 hover:bg-gray-100 cursor-pointer">
+                        <th v-for="key in visibleKeys" scope="row"
+                            class="px-6 py-4 font-medium max-w-6 whitespace-nowrap">
+                            <div class="truncate" v-html="getData(entry, key)"></div>
+                        </th>
+                    </tr>
+                </template>
             </tbody>
         </table>
     </div>
