@@ -72,8 +72,10 @@ function sorted(prop: DataEntryKey, ascending: SortDirection) {
     });
 }
 
-// Returns TRue if the checked data object should be shown, given the current
+// Returns true if the checked data object should be shown, given the current
 // state of the searchQuery. Always returns true if the searchQuery is empty.
+// Also checks ignoredFields to ignore any search fields that should not be used in the filter.
+const ignoredFields: string[] = [];
 function shouldShowDataEntry(dataObject: DataEntryType) {
     // Show any object if the search query is empty,
     // or just check all the fields on the data object to see if
@@ -83,6 +85,9 @@ function shouldShowDataEntry(dataObject: DataEntryType) {
     }
 
     for (const [key, value] of Object.entries(dataObject)) {
+        if (ignoredFields.indexOf(key) !== -1) {
+            continue;
+        }
         // Force convert all objects to strings...
         // This might have some unintended consequences, but it seems to work!
         var stringifiedValue = JSON.stringify(value);
