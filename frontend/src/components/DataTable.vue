@@ -117,9 +117,9 @@ function exportData() {
             // and we encase all values with quotes. 
             // (Read this if you are a nerd: https://datatracker.ietf.org/doc/html/rfc4180, 2.6 + 2.7)
 
-            // val = x[key] if x[key] is truthy, else "";
-            let indexKey = key as DataEntryKey;
-            let val = x[indexKey] != null ? x[indexKey] : "";
+            let val = x[key as DataEntryKey];
+            // val = val if val is truthy else "";
+            val = (val == null || val == undefined) ? "" : val;
             val = val.toString().replace(/"/g, '""');
             items.push('"' + val + '"');
         });
@@ -172,7 +172,13 @@ function exportData() {
             placeholder="Search"
         >
             <template #suffix>
-                <fwb-button gradient="cyan-blue" size="sm" @click="exportData()">Export data</fwb-button>
+                <fwb-button 
+                    gradient="cyan-blue" 
+                    size="sm" 
+                    v-bind:disabled="dataEntries && dataEntries.filter(shouldShowDataEntry).length == 0" 
+                    @click="exportData()">
+                    Export data
+                </fwb-button>
             </template>
         </fwb-input>
     </div>
