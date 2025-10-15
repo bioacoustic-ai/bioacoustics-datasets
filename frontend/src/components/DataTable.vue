@@ -102,38 +102,31 @@ function shouldShowDataEntry(dataObject: DataEntryType) {
 
 
 function exportData() {
-    // Get all of the data that the user is currently looking at.
+    // Export all of the data that the user is currently looking at as an CSV.
 
     // TODO: might be nice to have a "download all"-button that selects all of the categories.
     // It seems to be more intuitive to just download what the user actually sees (query + visible keys),
     // but maybe this isn't the case.
-    const filterVisibleKeys = ((x: DataEntryType) => {
-        let filteredObject = {};
-        visibleKeys.value.forEach((key: keyof DataEntryType) => {
-            filteredObject[key] = x[key];
-        });
-        return filteredObject;
-    });
 
     // Converts an object of type DataEntry to a CSV-style row.
-    // Should (can) be reduced by filterVisibleKeys first.
     const dataEntryToRow = ((x: DataEntryType) => {
-        let items = [];
-        visibleKeys.value.forEach((key: keyof DataEntryType) => {
+        let items: string[] = [];
+        visibleKeys.value.forEach((key: string) => {
             // In order to make sure that the file is loaded nicely as a CSV,
             // we escape all quotes (by replacing " -> "") as per the spec,
             // and we encase all values with quotes. 
             // (Read this if you are a nerd: https://datatracker.ietf.org/doc/html/rfc4180, 2.6 + 2.7)
 
             // val = x[key] if x[key] is truthy, else "";
-            let val = x[key] ? x[key] : "";
-            val = val.toString().replaceAll('"', '""');
+            let indexKey = key as DataEntryKey;
+            let val = x[indexKey] != null ? x[indexKey] : "";
+            val = val.toString().replace(/"/g, '""');
             items.push('"' + val + '"');
         });
         return items.join(",");
     });
 
-    let visibleData = dataEntries.value.filter((x: DataEntryType) => shouldShowDataEntry(x)).map(filterVisibleKeys);
+    let visibleData = dataEntries.value.filter((x: DataEntryType) => shouldShowDataEntry(x));
     // Constructing the header
     let csvHeader = visibleKeys.value.join(",") + "\n";
     // Constructing the body
