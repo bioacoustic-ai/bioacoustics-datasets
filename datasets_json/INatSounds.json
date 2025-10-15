@@ -17,7 +17,7 @@
   "lifeStage": "All",
   "locality": "",
   "minAndMaxRecordingDuration": "",
-  "name": "iNatSounds",
+  "name": "INatSounds",
   "numAnnotations": 230000,
   "numAudioFiles": 230000,
   "numClasses": 5500,
