@@ -107,7 +107,7 @@ function shouldShowDataEntry(dataObject: DataEntryType) {
     <div class="max-h-32 overflow-y-scroll mb-5">
         <div class="flex flex-wrap place-content-center">
             <div v-for="key in nameKeys.filter(x => !hiddenKeys.includes(x))"
-                class="flex items-center p-4 border border-gray-200 rounded xs:w-1/4 sm:w-1/5 lg:w-1/6 xl:w-1/6 m-1 h-6 cursor-pointer">
+                class="flex items-center select-none p-4 border border-gray-200 rounded xs:w-1/4 sm:w-1/5 lg:w-1/6 xl:w-1/6 m-1 h-6 cursor-pointer">
                 <input v-bind:id="key" v-bind:checked="visibleKeys.includes(key)" @change="updateChecked(key)"
                     type="checkbox" v-bind:value="key" v-bind:name="key"
                     class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 cursor-pointer">
