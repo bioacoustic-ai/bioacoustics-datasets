@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import DataModal from "@/components/DataModal.vue";
-import { FwbInput } from 'flowbite-vue';
+import { FwbButton, FwbInput } from 'flowbite-vue';
 import { ref } from "vue";
 import objects, { type DataEntryType } from "../data";
 import { getData, nameLookup } from "../data/formatting";
@@ -101,6 +101,53 @@ function shouldShowDataEntry(dataObject: DataEntryType) {
 }
 
 
+function exportData() {
+    // Export all of the data that the user is currently looking at as an CSV.
+
+    // TODO: might be nice to have a "download all"-button that selects all of the categories.
+    // It seems to be more intuitive to just download what the user actually sees (query + visible keys),
+    // but maybe this isn't the case.
+
+    // Converts an object of type DataEntry to a CSV-style row.
+    const dataEntryToRow = ((x: DataEntryType) => {
+        let items: string[] = [];
+        visibleKeys.value.forEach((key: string) => {
+            // In order to make sure that the file is loaded nicely as a CSV,
+            // we escape all quotes (by replacing " -> "") as per the spec,
+            // and we encase all values with quotes. 
+            // (Read this if you are a nerd: https://datatracker.ietf.org/doc/html/rfc4180, 2.6 + 2.7)
+
+            let val = x[key as DataEntryKey];
+            // val = val if val is truthy else "";
+            val = (val == null || val == undefined) ? "" : val;
+            val = val.toString().replace(/"/g, '""');
+            items.push('"' + val + '"');
+        });
+        return items.join(",");
+    });
+
+    let visibleData = dataEntries.value.filter((x: DataEntryType) => shouldShowDataEntry(x));
+    // Constructing the header
+    let csvHeader = visibleKeys.value.join(",") + "\n";
+    // Constructing the body
+    let csvBody = visibleData.map(dataEntryToRow).join("\n");
+    // Some weird Blob-API for JavaScript.
+    // But it seems to work!
+    const blobOptions: BlobPropertyBag = {
+        type: "text/csv;charset=UTF-8"
+    };
+    const file = new Blob([csvHeader + csvBody], blobOptions);
+    // The way programatically downloading things in the browser works is that
+    // you essentially create an anchor-element (hyperlink), and "click" it.
+    // But since you don't append it to the DOM, it is not actually rendered anywhere.
+    const link = document.createElement("a");
+    link.href = window.URL.createObjectURL(file);
+    link.download = "exported_data.csv";
+    link.click();
+}
+
+
+
 </script>
 
 <template>
@@ -123,7 +170,17 @@ function shouldShowDataEntry(dataObject: DataEntryType) {
         <fwb-input
             v-model="searchQuery"
             placeholder="Search"
-        />
+        >
+            <template #suffix>
+                <fwb-button 
+                    gradient="cyan-blue" 
+                    size="sm" 
+                    v-bind:disabled="dataEntries && dataEntries.filter(shouldShowDataEntry).length == 0" 
+                    @click="exportData()">
+                    Export data
+                </fwb-button>
+            </template>
+        </fwb-input>
     </div>
 
     <div class="data-table overflow-hidden">
