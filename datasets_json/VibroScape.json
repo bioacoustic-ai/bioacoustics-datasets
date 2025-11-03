@@ -4,7 +4,7 @@
     "captureDevice": "Doppler laser vibrometer (Polytec PDV 100)",
     "continent": "Europe",
     "countryCode": "SI",
-    "creators": "['Matija Marolt', 'Matevž Pesek', 'Rok Šturm', 'Juan José López Díez', 'Behare Rexhepi', 'Meta Virant-Doberlet']",
+    "creators": [ "Matija Marolt", "Matevž Pesek", "Rok Šturm", "Juan José López Díez", "Behare Rexhepi", "Meta Virant-Doberlet" ],
     "datePublished": "2024-06-18",
     "description": "The VibroScape dataset contains annotated laser vibrometry recordings collected over a period of several years. Most of them contain recordings of vibroscape in its natural environment (hay meadows), a subset also contains laboratory recordings of two species. The dataset was manually annotated by domain experts who marked the time/frequency ranges of each vibrational signal they encountered by listening to the recordings and inspecting the corresponding spectrograms. The experts classified the signals based on their distinct temporal and spectral characteristics.",
     "labellingLevel": "Strong",
