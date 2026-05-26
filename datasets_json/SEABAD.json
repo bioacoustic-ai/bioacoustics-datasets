@@ -1,0 +1,41 @@
+{
+    "additionalDescription": "Also offers train/validation/test splits",
+    "annotationsType": "Binary (bird activity presence/absence)",
+    "captureDevice": "Various",
+    "continent": "Asia",
+    "countryCode": [
+        "MY",
+        "ID",
+        "TH",
+        "SG",
+        "VN",
+        "PH"
+    ],
+    "creators": [
+        "Zabidi, Muhammad Mun'im Ahmad"
+    ],
+    "datePublished": "2026-02-01",
+    "description": "SEABAD (Southeast Asian Bird Activity Detection) is a large-scale audio dataset for Edge AI bird detection. The dataset is designed for automated bird activity detection, biodiversity monitoring, and real-time acoustic sensing on low-power devices. It is fully machine-learning ready. Positive samples were extracted from Xeno-canto recordings in Malaysia and neighboring countries (Thailand, Indonesia, Singapore, and Brunei) through December 2025. Samples were obtained by extracting the highest-energy 3-second segment from each Xeno-canto recording. Negative samples were drawn primarily from the BirdCLEF “BAD” competition datasets (BirdVox, Freefield1010, and Warblr) and were further supplemented with non-bird environmental audio from the FSC22, ESC50, and DataSEC datasets.SEABAD (Southeast Asian Bird Activity Detection) is a large-scale dataset for bird audio detection in tropical environments. It contains 50,000 curated 3-second audio clips from Southeast Asian soundscapes, evenly balanced between bird-present and bird-absent samples, standardized to 16 kHz mono audio for efficient model training and deployment.",
+    "labellingLevel": "Weak",
+    "license": "cc-by-4.0",
+    "lifeStage": "All",
+    "locality": "Southeast Asia",
+    "minAndMaxRecordingDuration": "3 - 3",
+    "name": "SEABAD",
+    "numAnnotations": 50000,
+    "numAudioFiles": 50000,
+    "numClasses": 2,
+    "numSpecies": 1677,
+    "paperLink": "https://arxiv.org/abs/2605.20853",
+    "physicalSetting": "Natural",
+    "provider": "Universiti Technology Malaysia",
+    "recordingPeriod": "",
+    "recordingType": "Clips",
+    "sampleRate": 16,
+    "sizeInGb": 4.2,
+    "taxonomicClass": "Birds",
+    "title": "SEABAD: Southeast Asian Bird Activity Detection Dataset",
+    "totalDuration": 42,
+    "url": "https://zenodo.org/records/18290494",
+    "version": "1.0"
+}
